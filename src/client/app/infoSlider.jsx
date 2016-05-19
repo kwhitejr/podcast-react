@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-const PictureSlider = React.createClass({
+const InfoSlider = React.createClass({
   getInitialState() {
     return {
       index: 0,
@@ -20,41 +20,39 @@ const PictureSlider = React.createClass({
 
   render() {
     return (
-      <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.props.toggleSlide}>
+      <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.toggleSlide} pauseOnHover={true} interval={2000} >
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[0].img}/>
-          <Carousel.Caption>
-            <h3>{this.props.slides[0].name}</h3>
-            <p>{this.props.slides[0].info}</p>
-          </Carousel.Caption>
+          <img width={300} height={500} alt="300x600" src="./assets/images/sidebar-300x600.jpg"/>
+          <div >
+            <Carousel.Caption>
+              <h3>{this.props.slides[0].name}</h3>
+              <p>{this.props.slides[0].info}</p>
+            </Carousel.Caption>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[1].img}/>
-          <Carousel.Caption>
+          <div width={300} height={600}>
             <h3>{this.props.slides[1].name}</h3>
             <p>{this.props.slides[1].info}</p>
-          </Carousel.Caption>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[2].img}/>
-          <Carousel.Caption>
+          <div width={300} height={600}>
             <h3>{this.props.slides[2].name}</h3>
             <p>{this.props.slides[2].info}</p>
-          </Carousel.Caption>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[3].img}/>
-          <Carousel.Caption>
-            <h3>{this.props.slides[3].name}</h3>
-            <p>{this.props.slides[3].info}</p>
-          </Carousel.Caption>
+          <div width={300} height={600}>
+            <h3>{this.props.slides[2].name}</h3>
+            <p>{this.props.slides[2].info}</p>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[4].img}/>
-          <Carousel.Caption>
-            <h3>{this.props.slides[4].name}</h3>
-            <p>{this.props.slides[4].info}</p>
-          </Carousel.Caption>
+          <div width={300} height={600}>
+            <h3>{this.props.slides[2].name}</h3>
+            <p>{this.props.slides[2].info}</p>
+          </div>
         </Carousel.Item>
       </Carousel>
     );
@@ -80,4 +78,4 @@ const PictureSlider = React.createClass({
 
 
 
-export default PictureSlider;
+export default InfoSlider;

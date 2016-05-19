@@ -49,50 +49,123 @@
 
 	'use strict';
 	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 33);
 	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 169);
+	
 	var _header = __webpack_require__(/*! ./header.jsx */ 168);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
+	var _slider = __webpack_require__(/*! ./slider.jsx */ 434);
+	
+	var _slider2 = _interopRequireDefault(_slider);
+	
+	var _about = __webpack_require__(/*! ./about.jsx */ 436);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var App = function (_React$Component) {
-	  _inherits(App, _React$Component);
-	
-	  function App() {
-	    _classCallCheck(this, App);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
+	var App = _react2.default.createClass({
+	  displayName: 'App',
+	  getInitialState: function getInitialState() {
+	    return {
+	      index: 0,
+	      direction: null,
+	      slides: [{
+	        name: 'Kevin White',
+	        info: 'He is a guy who loves coffee.',
+	        img: './assets/images/cups-900x600.jpg'
+	      }, {
+	        name: 'Theo Tran',
+	        info: 'He is a guy who loves music.',
+	        img: './assets/images/fox-900x600.jpg'
+	      }, {
+	        name: 'Chaz Leong',
+	        info: 'He is a guy who loves katsu curry chicken.',
+	        img: './assets/images/spices-900x600.jpg'
+	      }, {
+	        name: 'Jesse Copeland',
+	        info: 'He is a guy who loves the empire.',
+	        img: './assets/images/stories-900x600.jpg'
+	      }, {
+	        name: 'Tony Gaskell',
+	        info: 'He is a guy who loves puters.',
+	        img: './assets/images/fox-900x600.jpg'
+	      }]
+	    };
+	  },
+	  toggleSlide: function toggleSlide(selectedIndex, e) {
+	    this.setState({
+	      index: selectedIndex,
+	      direction: e.direction
+	    });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(_header2.default, null),
+	      _react2.default.createElement(GridInstance, {
+	        index: this.state.index,
+	        direction: this.state.direction,
+	        slides: this.state.slides,
+	        toggleSlide: this.toggleSlide
+	      })
+	    );
 	  }
+	});
+	// import InfoSlider from './infoSlider.jsx';
 	
-	  _createClass(App, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_header2.default, null)
-	      );
-	    }
-	  }]);
 	
-	  return App;
-	}(_react2.default.Component);
+	var GridInstance = _react2.default.createClass({
+	  displayName: 'GridInstance',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      _reactBootstrap.Grid,
+	      null,
+	      _react2.default.createElement(
+	        _reactBootstrap.Row,
+	        { className: 'show-grid' },
+	        _react2.default.createElement(
+	          _reactBootstrap.Col,
+	          { xs: 8, xsOffset: 2 },
+	          _react2.default.createElement(_slider2.default, {
+	            index: this.props.index,
+	            direction: this.props.direction,
+	            slides: this.props.slides,
+	            toggleSlide: this.props.toggleSlide
+	          })
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Row,
+	        { className: 'show-grid' },
+	        _react2.default.createElement(
+	          _reactBootstrap.Col,
+	          { xs: 6, xsOffset: 2 },
+	          _react2.default.createElement(_about2.default, null)
+	        )
+	      )
+	    );
+	  }
+	});
 	
 	(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
+	
+	//  <Col xs={4}>
+	//   <InfoSlider
+	//     index={this.props.index}
+	//     direction={this.props.direction}
+	//     slides={this.props.slides}
+	//     toggleSlide={this.props.toggleSlide}
+	//   />
+	// </Col>
 
 /***/ },
 /* 1 */
@@ -20756,37 +20829,7 @@
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
 	                { eventKey: 1, href: '#' },
-	                'Link'
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: '#' },
-	                'Link'
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavDropdown,
-	                { eventKey: 3, title: 'Dropdown', id: 'basic-nav-dropdown' },
-	                _react2.default.createElement(
-	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.1 },
-	                  'Action'
-	                ),
-	                _react2.default.createElement(
-	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.2 },
-	                  'Another action'
-	                ),
-	                _react2.default.createElement(
-	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.3 },
-	                  'Something else here'
-	                ),
-	                _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
-	                _react2.default.createElement(
-	                  _reactBootstrap.MenuItem,
-	                  { eventKey: 3.3 },
-	                  'Separated link'
-	                )
+	                'SoundCloud API'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -20795,12 +20838,12 @@
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
 	                { eventKey: 1, href: '#' },
-	                'Link Right'
+	                'Social Media'
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: '#' },
-	                'Link Right'
+	                { eventKey: 2, href: '#about' },
+	                'About'
 	              )
 	            )
 	          )
@@ -20813,6 +20856,15 @@
 	}(_react2.default.Component);
 	
 	exports.default = Header;
+	// <NavItem eventKey={1} href="#">Link</NavItem>
+
+	// <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+	//   <MenuItem eventKey={3.1}>Action</MenuItem>
+	//   <MenuItem eventKey={3.2}>Another action</MenuItem>
+	//   <MenuItem eventKey={3.3}>Something else here</MenuItem>
+	//   <MenuItem divider />
+	//   <MenuItem eventKey={3.3}>Separated link</MenuItem>
+	// </NavDropdown>
 
 /***/ },
 /* 169 */
@@ -40848,6 +40900,210 @@
 	var _ValidComponentChildren3 = _interopRequireDefault(_ValidComponentChildren2);
 	
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
+
+/***/ },
+/* 434 */
+/*!***********************************!*\
+  !*** ./src/client/app/slider.jsx ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 169);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PictureSlider = _react2.default.createClass({
+	  displayName: 'PictureSlider',
+	  getInitialState: function getInitialState() {
+	    return {
+	      index: 0,
+	      direction: null
+	    };
+	  },
+	  handleSelect: function handleSelect(selectedIndex, e) {
+	    // alert('selected=' + selectedIndex + ', direction=' + e.direction);
+	    console.log(this.props);
+	    this.setState({
+	      index: selectedIndex,
+	      direction: e.direction
+	    });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      _reactBootstrap.Carousel,
+	      { activeIndex: this.props.index, direction: this.props.direction, onSelect: this.props.toggleSlide },
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel.Item,
+	        null,
+	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[0].img }),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Caption,
+	          null,
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            this.props.slides[0].name
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            this.props.slides[0].info
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel.Item,
+	        null,
+	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[1].img }),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Caption,
+	          null,
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            this.props.slides[1].name
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            this.props.slides[1].info
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel.Item,
+	        null,
+	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[2].img }),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Caption,
+	          null,
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            this.props.slides[2].name
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            this.props.slides[2].info
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel.Item,
+	        null,
+	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[3].img }),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Caption,
+	          null,
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            this.props.slides[3].name
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            this.props.slides[3].info
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel.Item,
+	        null,
+	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[4].img }),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Caption,
+	          null,
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            this.props.slides[4].name
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            this.props.slides[4].info
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	// const PictureSlide = React.createClass({
+	//   render() {
+	//     console.log(this.props);
+	//     return (
+	//       <div>
+	//         <Carousel.Item>
+	//           <img width={900} height={600} alt="900x600" src={this.props.slide.img}/>
+	//           <Carousel.Caption>
+	//             <h3>{this.props.slide.name}</h3>
+	//             <p>{this.props.slide.info}</p>
+	//           </Carousel.Caption>
+	//         </Carousel.Item>
+	//       </div>
+	//     );
+	//   }
+	// });
+	
+	exports.default = PictureSlider;
+
+/***/ },
+/* 435 */,
+/* 436 */
+/*!**********************************!*\
+  !*** ./src/client/app/about.jsx ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 169);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var title = _react2.default.createElement(
+	  'h3',
+	  null,
+	  'About'
+	);
+	
+	var About = _react2.default.createClass({
+	  displayName: 'About',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { id: 'about' },
+	      _react2.default.createElement(
+	        _reactBootstrap.Panel,
+	        { header: title },
+	        'Panel content'
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = About;
 
 /***/ }
 /******/ ]);
