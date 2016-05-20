@@ -8,6 +8,8 @@ import PictureSlider from './slider.jsx';
 // import InfoSlider from './infoSlider.jsx';
 import About from './about.jsx';
 import Episodes from './episodes.jsx';
+// import Player from './player.jsx';
+// import CustomPlayer from './player2.jsx';
 
 const App = React.createClass({
   getInitialState() {
@@ -83,6 +85,12 @@ const GridInstance = React.createClass({
 
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
+            <CustomPlayer />
+          </Col>
+        </Row>&nbsp;
+
+        <Row className="show-grid">
+          <Col xs={10} xsOffset={1}>
             <Episodes />
           </Col>
         </Row>&nbsp;
@@ -108,3 +116,10 @@ render(<App/>, document.getElementById('app'));
 //     toggleSlide={this.props.toggleSlide}
 //   />
 // </Col>
+
+
+// <Row className="show-grid">
+//   <Col xs={10} xsOffset={1}>
+//     <Player />
+//   </Col>
+// </Row>&nbsp;

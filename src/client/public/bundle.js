@@ -75,9 +75,10 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// import Player from './player.jsx';
+	// import CustomPlayer from './player2.jsx';
+	
 	// import InfoSlider from './infoSlider.jsx';
-	
-	
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	  getInitialState: function getInitialState() {
@@ -155,6 +156,16 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Col,
 	          { xs: 10, xsOffset: 1 },
+	          _react2.default.createElement(CustomPlayer, null)
+	        )
+	      ),
+	      ' ',
+	      _react2.default.createElement(
+	        _reactBootstrap.Row,
+	        { className: 'show-grid' },
+	        _react2.default.createElement(
+	          _reactBootstrap.Col,
+	          { xs: 10, xsOffset: 1 },
 	          _react2.default.createElement(_episodes2.default, null)
 	        )
 	      ),
@@ -182,6 +193,12 @@
 	//     toggleSlide={this.props.toggleSlide}
 	//   />
 	// </Col>
+
+	// <Row className="show-grid">
+	//   <Col xs={10} xsOffset={1}>
+	//     <Player />
+	//   </Col>
+	// </Row>&nbsp;
 
 /***/ },
 /* 1 */
@@ -20854,11 +20871,16 @@
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
 	                { eventKey: 1, href: '#' },
+	                'Episodes'
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 2, href: '#' },
 	                'Social Media'
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: '#about' },
+	                { eventKey: 3, href: '#about' },
 	                'About'
 	              )
 	            )

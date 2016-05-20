@@ -17,6 +17,7 @@
     "react": "^15.0.2",
     "react-bootstrap": "^0.29.4",
     "react-dom": "^15.0.2",
+    "react-soundplayer": "^0.3.5",
     "webpack": "^1.13.0"
   }
 }
