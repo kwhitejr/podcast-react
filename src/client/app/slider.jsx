@@ -22,7 +22,7 @@ const PictureSlider = React.createClass({
     return (
       <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.props.toggleSlide}>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[0].img}/>
+          <img width={950} height={600} alt="900x600" src={this.props.slides[0].img}/>
           <Carousel.Caption>
             <h3>{this.props.slides[0].name}</h3>
             <p>{this.props.slides[0].info}</p>

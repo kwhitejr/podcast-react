@@ -69,7 +69,14 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
+	var _episodes = __webpack_require__(/*! ./episodes.jsx */ 437);
+	
+	var _episodes2 = _interopRequireDefault(_episodes);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// import InfoSlider from './infoSlider.jsx';
+	
 	
 	var App = _react2.default.createClass({
 	  displayName: 'App',
@@ -120,8 +127,6 @@
 	    );
 	  }
 	});
-	// import InfoSlider from './infoSlider.jsx';
-	
 	
 	var GridInstance = _react2.default.createClass({
 	  displayName: 'GridInstance',
@@ -134,7 +139,7 @@
 	        { className: 'show-grid' },
 	        _react2.default.createElement(
 	          _reactBootstrap.Col,
-	          { xs: 8, xsOffset: 2 },
+	          { xs: 10, xsOffset: 1 },
 	          _react2.default.createElement(_slider2.default, {
 	            index: this.props.index,
 	            direction: this.props.direction,
@@ -143,12 +148,23 @@
 	          })
 	        )
 	      ),
+	      ' ',
 	      _react2.default.createElement(
 	        _reactBootstrap.Row,
 	        { className: 'show-grid' },
 	        _react2.default.createElement(
 	          _reactBootstrap.Col,
-	          { xs: 6, xsOffset: 2 },
+	          { xs: 10, xsOffset: 1 },
+	          _react2.default.createElement(_episodes2.default, null)
+	        )
+	      ),
+	      ' ',
+	      _react2.default.createElement(
+	        _reactBootstrap.Row,
+	        { className: 'show-grid' },
+	        _react2.default.createElement(
+	          _reactBootstrap.Col,
+	          { xs: 6, xsOffset: 1 },
 	          _react2.default.createElement(_about2.default, null)
 	        )
 	      )
@@ -40945,7 +40961,7 @@
 	      _react2.default.createElement(
 	        _reactBootstrap.Carousel.Item,
 	        null,
-	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[0].img }),
+	        _react2.default.createElement('img', { width: 950, height: 600, alt: '900x600', src: this.props.slides[0].img }),
 	        _react2.default.createElement(
 	          _reactBootstrap.Carousel.Caption,
 	          null,
@@ -41104,6 +41120,62 @@
 	});
 	
 	exports.default = About;
+
+/***/ },
+/* 437 */
+/*!*************************************!*\
+  !*** ./src/client/app/episodes.jsx ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 169);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Episodes = _react2.default.createClass({
+	  displayName: 'Episodes',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { id: 'episodes' },
+	      _react2.default.createElement(
+	        _reactBootstrap.Media,
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Left,
+	          null,
+	          _react2.default.createElement('img', { width: 64, height: 64, src: './assets/images/sidebar-300x600.jpg', alt: 'Image' })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Body,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Media.Heading,
+	            null,
+	            'Media Heading'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = Episodes;
 
 /***/ }
 /******/ ]);

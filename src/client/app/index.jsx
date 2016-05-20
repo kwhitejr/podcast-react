@@ -7,6 +7,7 @@ import Header from './header.jsx';
 import PictureSlider from './slider.jsx';
 // import InfoSlider from './infoSlider.jsx';
 import About from './about.jsx';
+import Episodes from './episodes.jsx';
 
 const App = React.createClass({
   getInitialState() {
@@ -70,7 +71,7 @@ const GridInstance = React.createClass({
     return (
       <Grid>
         <Row className="show-grid">
-          <Col xs={8} xsOffset={2}>
+          <Col xs={10} xsOffset={1}>
             <PictureSlider
               index={this.props.index}
               direction={this.props.direction}
@@ -78,10 +79,16 @@ const GridInstance = React.createClass({
               toggleSlide={this.props.toggleSlide}
             />
           </Col>
-        </Row>
+        </Row>&nbsp;
 
         <Row className="show-grid">
-          <Col xs={6} xsOffset={2}>
+          <Col xs={10} xsOffset={1}>
+            <Episodes />
+          </Col>
+        </Row>&nbsp;
+
+        <Row className="show-grid">
+          <Col xs={6} xsOffset={1}>
             <About />
           </Col>
         </Row>
