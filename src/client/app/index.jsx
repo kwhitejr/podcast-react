@@ -11,6 +11,7 @@ import Episodes from './episodes.jsx';
 // import Player from './player.jsx';
 // import CustomPlayer from './player2.jsx';
 
+
 const App = React.createClass({
   getInitialState() {
     return {
@@ -83,11 +84,6 @@ const GridInstance = React.createClass({
           </Col>
         </Row>&nbsp;
 
-        <Row className="show-grid">
-          <Col xs={10} xsOffset={1}>
-            <CustomPlayer />
-          </Col>
-        </Row>&nbsp;
 
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
