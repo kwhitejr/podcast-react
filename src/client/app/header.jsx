@@ -5,7 +5,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar inverse>
+        <Navbar fixedTop={true} inverse>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#">The Grind</a>
@@ -17,12 +17,14 @@ class Header extends React.Component {
               <NavItem eventKey={1} href="#">SoundCloud API</NavItem>
 
             </Nav>
+
             <Nav pullRight>
               <NavItem eventKey={1} href="#episodes">Episodes</NavItem>
-              <NavItem eventKey={2} href="#">Social Media</NavItem>
+              <NavItem eventKey={2} href="#"></NavItem>
               <NavItem eventKey={3} href="#about">About</NavItem>
             </Nav>
           </Navbar.Collapse>
+
         </Navbar>
       </div>
     );

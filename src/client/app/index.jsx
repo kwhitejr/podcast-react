@@ -22,7 +22,7 @@ const App = React.createClass({
           episode: '001',
           name: 'David Stapp',
           info: 'Texan, Legal Mind, Skilled Orator, Questionable Comedian',
-          description: 'Met Dave in law school. After three years, I find out that he prefers to go by "David." He\'s a pretty astute fellow, despite his height. As young professionals on the cusp of new careers as attorneys, we share a fear of leading a drab cubicle existence. Do not go gently into that morose good night.',
+          description: 'Met Dave in law school. After three years, I found out that he prefers to go by "David." He\'s a pretty astute fellow, despite his height. As young professionals on the cusp of new careers as attorneys, we share a fear of leading a drab cubicle existence. Do not go gently into that morose good night.',
           date: '2/27/2016',
           img: './assets/images/001davidstapp-900x600.jpg',
           sqimg: './assets/images/001davidstapp-sq.jpg',
@@ -94,7 +94,9 @@ const App = React.createClass({
 const GridInstance = React.createClass({
   render() {
     return (
-      <Grid>
+      <Grid
+        className="grid"
+      >
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
             <PictureSlider

@@ -20,7 +20,7 @@ const PictureSlider = React.createClass({
 
   render() {
     return (
-      <div>
+      <div className="slider">
       <h2>Recent Episodes</h2>
       <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.props.toggleSlide} slide={true} interval={3000}>
         <Carousel.Item>
@@ -59,7 +59,6 @@ const PictureSlider = React.createClass({
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <hr />
       </div>
     );
   }

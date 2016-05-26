@@ -64,6 +64,8 @@ const Episodes = React.createClass({
             <h4>{this.props.episodes[0].description}</h4>
           </Media.Body>
         </Media>
+        <hr />
+
       </div>
     )
   }

@@ -89,7 +89,7 @@
 	        episode: '001',
 	        name: 'David Stapp',
 	        info: 'Texan, Legal Mind, Skilled Orator, Questionable Comedian',
-	        description: 'Met Dave in law school. After three years, I find out that he prefers to go by "David." He\'s a pretty astute fellow, despite his height. As young professionals on the cusp of new careers as attorneys, we share a fear of leading a drab cubicle existence. Do not go gently into that morose good night.',
+	        description: 'Met Dave in law school. After three years, I found out that he prefers to go by "David." He\'s a pretty astute fellow, despite his height. As young professionals on the cusp of new careers as attorneys, we share a fear of leading a drab cubicle existence. Do not go gently into that morose good night.',
 	        date: '2/27/2016',
 	        img: './assets/images/001davidstapp-900x600.jpg',
 	        sqimg: './assets/images/001davidstapp-sq.jpg',
@@ -156,7 +156,9 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      _reactBootstrap.Grid,
-	      null,
+	      {
+	        className: 'grid'
+	      },
 	      _react2.default.createElement(
 	        _reactBootstrap.Row,
 	        { className: 'show-grid' },
@@ -40887,7 +40889,7 @@
 	        null,
 	        _react2.default.createElement(
 	          _reactBootstrap.Navbar,
-	          { inverse: true },
+	          { fixedTop: true, inverse: true },
 	          _react2.default.createElement(
 	            _reactBootstrap.Navbar.Header,
 	            null,
@@ -40922,11 +40924,7 @@
 	                { eventKey: 1, href: '#episodes' },
 	                'Episodes'
 	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: '#' },
-	                'Social Media'
-	              ),
+	              _react2.default.createElement(_reactBootstrap.NavItem, { eventKey: 2, href: '#' }),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
 	                { eventKey: 3, href: '#about' },
@@ -40993,7 +40991,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'slider' },
 	      _react2.default.createElement(
 	        'h2',
 	        null,
@@ -41125,8 +41123,7 @@
 	            )
 	          )
 	        )
-	      ),
-	      _react2.default.createElement('hr', null)
+	      )
 	    );
 	  }
 	});
@@ -41172,9 +41169,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var title = _react2.default.createElement(
-	  'h3',
+	  'h2',
 	  null,
-	  'About'
+	  'About the Podcast'
 	);
 	
 	var About = _react2.default.createClass({
@@ -41186,7 +41183,12 @@
 	      _react2.default.createElement(
 	        _reactBootstrap.Panel,
 	        { header: title },
-	        'Panel content'
+	        _react2.default.createElement(
+	          'i',
+	          null,
+	          'The Grind with Kevin'
+	        ),
+	        ' is my project to start generating conversations with the many interesting people I\'ve met on this life\'s journey. I\'ve been inspired by many of the conversational podcasts out there, but they also tend to be the domain of various celebrity personalities. I am interested in hearing and sharing what everyday people have to say about the various topics that interest them. My goal is to share a cup of coffee with each of them, prevaricate on the issues of the day, and inject a bit of humor and personal growth where I can. Thanks for listening!'
 	      )
 	    );
 	  }
@@ -41408,7 +41410,8 @@
 	            this.props.episodes[0].description
 	          )
 	        )
-	      )
+	      ),
+	      _react2.default.createElement('hr', null)
 	    );
 	  }
 	});
