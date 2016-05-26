@@ -35,7 +35,7 @@ const Episodes = React.createClass({
             <img width={150} height={150} src={this.props.episodes[2].sqimg} alt="Image"/>
           </Media.Left>
           <Media.Body>
-            <Media.Heading>{this.props.episodes[2].episode} - {this.props.episodes[2].name} - {this.props.episodes[2].date}</Media.Heading>
+            <Media.Heading><a href={this.props.episodes[2].soundcloud}>{this.props.episodes[2].episode} - {this.props.episodes[2].name} - {this.props.episodes[2].date}</a></Media.Heading>
             <p>{this.props.episodes[2].description}</p>
             <h4><a href="http://www.benjaminpettus.com">www.benjaminpettus.com</a></h4>
           </Media.Body>

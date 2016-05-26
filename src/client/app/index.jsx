@@ -45,7 +45,8 @@ const App = React.createClass({
           img: './assets/images/spices-900x600.jpg',
           sqimg: './assets/images/003benpettus-sq.jpg',
           description: 'Ben is a designer extraordinaire. He was also my classmate at DevLeague, where we shared a great love for good coffee. Ben was instrumental in helping to conceptualize the podcast, and designed its legendary logos. We go deep into his transformative experience as a Mysore Ashtanga yoga student and his journey to becoming a full instructor.',
-          date: '3/22/2016'
+          date: '3/22/2016',
+          soundcloud: 'https://soundcloud.com/kevin-white-612475908/003-benjamin-pettus-32216'
         },
         {
           episode: '004',
