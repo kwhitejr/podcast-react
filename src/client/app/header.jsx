@@ -1,5 +1,9 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Tooltip, OverlayTrigger } from 'react-bootstrap';
+
+const tooltip = (
+  <Tooltip>Coming Soon!</Tooltip>
+);
 
 class Header extends React.Component {
   render() {
@@ -11,7 +15,9 @@ class Header extends React.Component {
               <a href="#">The Grind</a>
             </Navbar.Brand>
             <Nav>
+              <OverlayTrigger placement="right" overlay={tooltip}>
               <NavItem eventKey={1} href="#">SoundCloud Player</NavItem>
+              </OverlayTrigger>
             </Nav>
             <Navbar.Toggle />
           </Navbar.Header>

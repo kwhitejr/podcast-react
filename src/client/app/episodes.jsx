@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media } from 'react-bootstrap';
+import { Media, Label } from 'react-bootstrap';
 
 
 const Episodes = React.createClass({
@@ -12,7 +12,7 @@ const Episodes = React.createClass({
             <img width={150} height={150} src={this.props.episodes[4].sqimg} alt="Image"/>
           </Media.Left>
           <Media.Body>
-            <Media.Heading>{this.props.episodes[4].episode} - {this.props.episodes[4].name} - {this.props.episodes[4].date}</Media.Heading>
+            <Media.Heading>{this.props.episodes[4].episode} - {this.props.episodes[4].name} - {this.props.episodes[4].date} <Label bsStyle="success">Coming Soon!</Label></Media.Heading>
             <p>{this.props.episodes[4].description}</p>
             <h4><a href="http://www.skykombucha.com">www.skykombucha.com</a></h4>
           </Media.Body>
@@ -24,7 +24,7 @@ const Episodes = React.createClass({
             <img width={150} height={150} src={this.props.episodes[3].sqimg} alt="Image"/>
           </Media.Left>
           <Media.Body>
-            <Media.Heading>{this.props.episodes[3].episode} - {this.props.episodes[3].name} - {this.props.episodes[3].date}</Media.Heading>
+            <Media.Heading>{this.props.episodes[3].episode} - {this.props.episodes[3].name} - {this.props.episodes[3].date} <Label bsStyle="success">Coming Soon!</Label></Media.Heading>
             <p>{this.props.episodes[3].description}</p>
           </Media.Body>
         </Media>

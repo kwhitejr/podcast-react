@@ -100,7 +100,7 @@
 	        info: 'EDM DJ, Jiu-jitsu Ninja, Web Developer, Gun Enthusiast',
 	        img: './assets/images/002theotran-900x600.jpg',
 	        sqimg: './assets/images/002theotran-sq.jpg',
-	        description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
+	        description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. He also has the best damn hat collection I ever did see. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
 	        date: '3/6/2016',
 	        soundcloud: 'https://soundcloud.com/kevin-white-612475908/002-dj-theo-tran-3616'
 	      }, {
@@ -40872,6 +40872,12 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var tooltip = _react2.default.createElement(
+	  _reactBootstrap.Tooltip,
+	  null,
+	  'Coming Soon!'
+	);
+	
 	var Header = function (_React$Component) {
 	  _inherits(Header, _React$Component);
 	
@@ -40906,9 +40912,13 @@
 	              _reactBootstrap.Nav,
 	              null,
 	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: '#' },
-	                'SoundCloud Player'
+	                _reactBootstrap.OverlayTrigger,
+	                { placement: 'right', overlay: tooltip },
+	                _react2.default.createElement(
+	                  _reactBootstrap.NavItem,
+	                  { eventKey: 1, href: '#' },
+	                  'SoundCloud Player'
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
@@ -41260,7 +41270,13 @@
 	            ' - ',
 	            this.props.episodes[4].name,
 	            ' - ',
-	            this.props.episodes[4].date
+	            this.props.episodes[4].date,
+	            ' ',
+	            _react2.default.createElement(
+	              _reactBootstrap.Label,
+	              { bsStyle: 'success' },
+	              'Coming Soon!'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -41297,7 +41313,13 @@
 	            ' - ',
 	            this.props.episodes[3].name,
 	            ' - ',
-	            this.props.episodes[3].date
+	            this.props.episodes[3].date,
+	            ' ',
+	            _react2.default.createElement(
+	              _reactBootstrap.Label,
+	              { bsStyle: 'success' },
+	              'Coming Soon!'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',

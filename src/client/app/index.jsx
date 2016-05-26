@@ -34,7 +34,7 @@ const App = React.createClass({
           info: 'EDM DJ, Jiu-jitsu Ninja, Web Developer, Gun Enthusiast',
           img: './assets/images/002theotran-900x600.jpg',
           sqimg: './assets/images/002theotran-sq.jpg',
-          description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
+          description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. He also has the best damn hat collection I ever did see. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
           date: '3/6/2016',
           soundcloud: 'https://soundcloud.com/kevin-white-612475908/002-dj-theo-tran-3616'
         },
