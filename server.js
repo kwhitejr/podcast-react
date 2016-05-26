@@ -6,8 +6,14 @@ var express = require('express'),
 mongoose.connect('mongodb://localhost/test');
 
 var episodeSchema = mongoose.Schema({
+  episode: String,
   name: String,
-  author: String
+  info: String,
+  description: String,
+  date: String,
+  img: String,
+  sqimg: String,
+  soundcloud: String
 });
 // collection name will get pluralized by mongoose
 var Episode = mongoose.model('Episode', episodeSchema);
@@ -20,6 +26,25 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.route('/')
   .get(function (req, res) {
     res.send('index');
+  });
+
+app.route('/episodes')
+  .get(function (req, res) {
+
+  })
+  .post(function (req, res) {
+    var newEpisode = new Episode({
+      episode: req.body.episode,
+      name: req.body.name,
+      info: req.body.info,
+      description: req.body.description,
+      date: req.body.date,
+      img: req.body.img,
+      sqimg: req.body.sqimg,
+      soundcloud: req.body.soundcloud
+    });
+    newEpisode.save();
+    res.send('Episode entered into database.');
   });
 
 var db = mongoose.connection;
