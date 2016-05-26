@@ -18,7 +18,7 @@ class Header extends React.Component {
 
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">Episodes</NavItem>
+              <NavItem eventKey={1} href="#episodes">Episodes</NavItem>
               <NavItem eventKey={2} href="#">Social Media</NavItem>
               <NavItem eventKey={3} href="#about">About</NavItem>
             </Nav>

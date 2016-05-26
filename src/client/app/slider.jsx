@@ -20,43 +20,47 @@ const PictureSlider = React.createClass({
 
   render() {
     return (
-      <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.props.toggleSlide}>
+      <div>
+      <h2>Recent Episodes</h2>
+      <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.props.toggleSlide} slide={true} interval={3000}>
         <Carousel.Item>
-          <img width={950} height={600} alt="900x600" src={this.props.slides[0].img}/>
+          <a href={this.props.episodes[0].soundcloud}><img width={950} height={600} alt="950x600" src={this.props.episodes[0].img}/></a>
           <Carousel.Caption>
-            <h3>{this.props.slides[0].name}</h3>
-            <p>{this.props.slides[0].info}</p>
+            <h1>{this.props.episodes[0].episode} - {this.props.episodes[0].name} - {this.props.episodes[0].date}</h1>
+            <h4>{this.props.episodes[0].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[1].img}/>
+          <a href={this.props.episodes[1].soundcloud}><img width={950} height={600} alt="950x600" src={this.props.episodes[1].img}/></a>
           <Carousel.Caption>
-            <h3>{this.props.slides[1].name}</h3>
-            <p>{this.props.slides[1].info}</p>
+            <h1>{this.props.episodes[1].episode} - {this.props.episodes[1].name} - {this.props.episodes[1].date}</h1>
+            <h4>{this.props.episodes[1].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[2].img}/>
+          <img width={950} height={600} alt="950x600" src={this.props.episodes[2].img}/>
           <Carousel.Caption>
-            <h3>{this.props.slides[2].name}</h3>
-            <p>{this.props.slides[2].info}</p>
+            <h1>{this.props.episodes[2].episode} - {this.props.episodes[2].name} - {this.props.episodes[2].date}</h1>
+            <h4>{this.props.episodes[2].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[3].img}/>
+          <img width={950} height={600} alt="950x600" src={this.props.episodes[3].img}/>
           <Carousel.Caption>
-            <h3>{this.props.slides[3].name}</h3>
-            <p>{this.props.slides[3].info}</p>
+            <h1>{this.props.episodes[3].episode} - {this.props.episodes[3].name} - {this.props.episodes[3].date}</h1>
+            <h4>{this.props.episodes[3].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={900} height={600} alt="900x600" src={this.props.slides[4].img}/>
+          <img width={950} height={600} alt="950x600" src={this.props.episodes[4].img}/>
           <Carousel.Caption>
-            <h3>{this.props.slides[4].name}</h3>
-            <p>{this.props.slides[4].info}</p>
+            <h1>{this.props.episodes[4].episode} - {this.props.episodes[4].name} - {this.props.episodes[4].date}</h1>
+            <h4>{this.props.episodes[4].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <hr />
+      </div>
     );
   }
 });

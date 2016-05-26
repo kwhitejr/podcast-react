@@ -85,26 +85,48 @@
 	    return {
 	      index: 0,
 	      direction: null,
-	      slides: [{
-	        name: 'Kevin White',
-	        info: 'He is a guy who loves coffee.',
-	        img: './assets/images/cups-900x600.jpg'
+	      episodes: [{
+	        episode: '001',
+	        name: 'David Stapp',
+	        info: 'Texan, Legal Mind, Skilled Orator, Questionable Comedian',
+	        description: 'Met Dave in law school. After three years, I find out that he prefers to go by "David." He\'s a pretty astute fellow, despite his height. As young professionals on the cusp of new careers as attorneys, we share a fear of leading a drab cubicle existence. Do not go gently into that morose good night.',
+	        date: '2/27/2016',
+	        img: './assets/images/001davidstapp-900x600.jpg',
+	        sqimg: './assets/images/001davidstapp-sq.jpg',
+	        soundcloud: 'https://soundcloud.com/kevin-white-612475908/001-david-stapp-022716'
 	      }, {
-	        name: 'Theo Tran',
-	        info: 'He is a guy who loves music.',
-	        img: './assets/images/fox-900x600.jpg'
+	        episode: '002',
+	        name: 'DJ Theo Tran',
+	        info: 'EDM DJ, Jiu-jitsu Ninja, Web Developer, Gun Enthusiast',
+	        img: './assets/images/002theotran-900x600.jpg',
+	        sqimg: './assets/images/002theotran-sq.jpg',
+	        description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
+	        date: '3/6/2016',
+	        soundcloud: 'https://soundcloud.com/kevin-white-612475908/002-dj-theo-tran-3616'
 	      }, {
-	        name: 'Chaz Leong',
-	        info: 'He is a guy who loves katsu curry chicken.',
-	        img: './assets/images/spices-900x600.jpg'
+	        episode: '003',
+	        name: 'Benjamin Pettus',
+	        info: 'Designer, Web Developer, Yoga Instructor, Coffee Connoiseur',
+	        img: './assets/images/spices-900x600.jpg',
+	        sqimg: './assets/images/003benpettus-sq.jpg',
+	        description: 'Ben is a designer extraordinaire. He was also my classmate at DevLeague, where we shared a great love for good coffee. Ben was instrumental in helping to conceptualize the podcast, and designed its legendary logos. We go deep into his transformative experience as a Mysore Ashtanga yoga student and his journey to becoming a full instructor.',
+	        date: '3/22/2016'
 	      }, {
-	        name: 'Jesse Copeland',
-	        info: 'He is a guy who loves the empire.',
-	        img: './assets/images/stories-900x600.jpg'
+	        episode: '004',
+	        name: 'Brad Sova',
+	        info: 'Attorney, Linguist, Gamer, Quick-witted Rascal, Dour Genius',
+	        img: './assets/images/004bradsova-900x600.jpg',
+	        sqimg: './assets/images/004bradsova-sq.jpg',
+	        description: 'Brad is well-known ne\'er-do-well who is not, in fact, well-known, and a disreputable rascal who is not, in fact, disreputable. We discuss why Nintendo cannot hope to successfully develop an open-world Zelda, why Miyamoto-san ought to gracefully retire, and why Tim is so very, very wrong.',
+	        date: '3/27/2016'
 	      }, {
-	        name: 'Tony Gaskell',
-	        info: 'He is a guy who loves puters.',
-	        img: './assets/images/fox-900x600.jpg'
+	        episode: '005',
+	        name: 'Dave Yarber',
+	        info: 'SKY Kombucha Co-Founder, Brewer, Entrepreneur, Attorney',
+	        img: './assets/images/005daveyarber-900x600.jpg',
+	        sqimg: './assets/images/005daveyarber-sq.jpg',
+	        description: 'Dave the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.',
+	        date: '4/10/2016'
 	      }]
 	    };
 	  },
@@ -122,7 +144,7 @@
 	      _react2.default.createElement(GridInstance, {
 	        index: this.state.index,
 	        direction: this.state.direction,
-	        slides: this.state.slides,
+	        episodes: this.state.episodes,
 	        toggleSlide: this.toggleSlide
 	      })
 	    );
@@ -144,7 +166,7 @@
 	          _react2.default.createElement(_slider2.default, {
 	            index: this.props.index,
 	            direction: this.props.direction,
-	            slides: this.props.slides,
+	            episodes: this.props.episodes,
 	            toggleSlide: this.props.toggleSlide
 	          })
 	        )
@@ -156,7 +178,9 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Col,
 	          { xs: 10, xsOffset: 1 },
-	          _react2.default.createElement(_episodes2.default, null)
+	          _react2.default.createElement(_episodes2.default, {
+	            episodes: this.props.episodes
+	          })
 	        )
 	      ),
 	      ' ',
@@ -179,7 +203,7 @@
 	//   <InfoSlider
 	//     index={this.props.index}
 	//     direction={this.props.direction}
-	//     slides={this.props.slides}
+	//     episodes={this.props.episodes}
 	//     toggleSlide={this.props.toggleSlide}
 	//   />
 	// </Col>
@@ -40895,7 +40919,7 @@
 	              { pullRight: true },
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: '#' },
+	                { eventKey: 1, href: '#episodes' },
 	                'Episodes'
 	              ),
 	              _react2.default.createElement(
@@ -40968,103 +40992,141 @@
 	  },
 	  render: function render() {
 	    return _react2.default.createElement(
-	      _reactBootstrap.Carousel,
-	      { activeIndex: this.props.index, direction: this.props.direction, onSelect: this.props.toggleSlide },
+	      'div',
+	      null,
 	      _react2.default.createElement(
-	        _reactBootstrap.Carousel.Item,
+	        'h2',
 	        null,
-	        _react2.default.createElement('img', { width: 950, height: 600, alt: '900x600', src: this.props.slides[0].img }),
+	        'Recent Episodes'
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel,
+	        { activeIndex: this.props.index, direction: this.props.direction, onSelect: this.props.toggleSlide, slide: true, interval: 3000 },
 	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Caption,
+	          _reactBootstrap.Carousel.Item,
 	          null,
 	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            this.props.slides[0].name
+	            'a',
+	            { href: this.props.episodes[0].soundcloud },
+	            _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[0].img })
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            _reactBootstrap.Carousel.Caption,
 	            null,
-	            this.props.slides[0].info
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[0].episode,
+	              ' - ',
+	              this.props.episodes[0].name,
+	              ' - ',
+	              this.props.episodes[0].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[0].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: this.props.episodes[1].soundcloud },
+	            _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[1].img })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[1].episode,
+	              ' - ',
+	              this.props.episodes[1].name,
+	              ' - ',
+	              this.props.episodes[1].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[1].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[2].img }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[2].episode,
+	              ' - ',
+	              this.props.episodes[2].name,
+	              ' - ',
+	              this.props.episodes[2].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[2].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[3].img }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[3].episode,
+	              ' - ',
+	              this.props.episodes[3].name,
+	              ' - ',
+	              this.props.episodes[3].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[3].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[4].img }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[4].episode,
+	              ' - ',
+	              this.props.episodes[4].name,
+	              ' - ',
+	              this.props.episodes[4].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[4].info
+	            )
 	          )
 	        )
 	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Carousel.Item,
-	        null,
-	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[1].img }),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Caption,
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            this.props.slides[1].name
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            this.props.slides[1].info
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Carousel.Item,
-	        null,
-	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[2].img }),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Caption,
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            this.props.slides[2].name
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            this.props.slides[2].info
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Carousel.Item,
-	        null,
-	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[3].img }),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Caption,
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            this.props.slides[3].name
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            this.props.slides[3].info
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Carousel.Item,
-	        null,
-	        _react2.default.createElement('img', { width: 900, height: 600, alt: '900x600', src: this.props.slides[4].img }),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Caption,
-	          null,
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            this.props.slides[4].name
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            this.props.slides[4].info
-	          )
-	        )
-	      )
+	      _react2.default.createElement('hr', null)
 	    );
 	  }
 	});
@@ -41160,12 +41222,17 @@
 	      'div',
 	      { id: 'episodes' },
 	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'All Episodes'
+	      ),
+	      _react2.default.createElement(
 	        _reactBootstrap.Media,
 	        null,
 	        _react2.default.createElement(
 	          _reactBootstrap.Media.Left,
 	          null,
-	          _react2.default.createElement('img', { width: 64, height: 64, src: './assets/images/sidebar-300x600.jpg', alt: 'Image' })
+	          _react2.default.createElement('img', { width: 150, height: 150, src: this.props.episodes[4].sqimg, alt: 'Image' })
 	        ),
 	        _react2.default.createElement(
 	          _reactBootstrap.Media.Body,
@@ -41173,12 +41240,172 @@
 	          _react2.default.createElement(
 	            _reactBootstrap.Media.Heading,
 	            null,
-	            'Media Heading'
+	            this.props.episodes[4].episode,
+	            ' - ',
+	            this.props.episodes[4].name,
+	            ' - ',
+	            this.props.episodes[4].date
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            'h4',
 	            null,
-	            'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+	            this.props.episodes[4].description
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.skykombucha.com' },
+	              'www.skykombucha.com'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('hr', null),
+	      _react2.default.createElement(
+	        _reactBootstrap.Media,
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Left,
+	          null,
+	          _react2.default.createElement('img', { width: 150, height: 150, src: this.props.episodes[3].sqimg, alt: 'Image' })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Body,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Media.Heading,
+	            null,
+	            this.props.episodes[3].episode,
+	            ' - ',
+	            this.props.episodes[3].name,
+	            ' - ',
+	            this.props.episodes[3].date
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            this.props.episodes[3].description
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('hr', null),
+	      _react2.default.createElement(
+	        _reactBootstrap.Media,
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Left,
+	          null,
+	          _react2.default.createElement('img', { width: 150, height: 150, src: this.props.episodes[2].sqimg, alt: 'Image' })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Body,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Media.Heading,
+	            null,
+	            this.props.episodes[2].episode,
+	            ' - ',
+	            this.props.episodes[2].name,
+	            ' - ',
+	            this.props.episodes[2].date
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            this.props.episodes[2].description
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.benjaminpettus.com' },
+	              'www.benjaminpettus.com'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('hr', null),
+	      _react2.default.createElement(
+	        _reactBootstrap.Media,
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Left,
+	          null,
+	          _react2.default.createElement('img', { width: 150, height: 150, src: this.props.episodes[1].sqimg, alt: 'Image' })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Body,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Media.Heading,
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: this.props.episodes[1].soundcloud },
+	              this.props.episodes[1].episode,
+	              ' - ',
+	              this.props.episodes[1].name,
+	              ' - ',
+	              this.props.episodes[1].date
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            this.props.episodes[1].description
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.theotrance.com' },
+	              'www.theotrance.com'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://soundcloud.com/theotranofficial' },
+	              'Theo on SoundCloud'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('hr', null),
+	      _react2.default.createElement(
+	        _reactBootstrap.Media,
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Left,
+	          null,
+	          _react2.default.createElement('img', { width: 150, height: 150, src: this.props.episodes[0].sqimg, alt: 'Image' })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Media.Body,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Media.Heading,
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: this.props.episodes[0].soundcloud },
+	              this.props.episodes[0].episode,
+	              ' - ',
+	              this.props.episodes[0].name,
+	              ' - ',
+	              this.props.episodes[0].date
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            this.props.episodes[0].description
 	          )
 	        )
 	      )
