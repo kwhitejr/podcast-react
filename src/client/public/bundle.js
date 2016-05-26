@@ -40921,17 +40921,17 @@
 	              { pullRight: true },
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: 'https://www.twitter.com/thegrindwithkev', className: '' },
+	                { eventKey: 1, href: 'https://www.twitter.com/thegrindwithkev', target: '_blank', className: '' },
 	                _react2.default.createElement('span', { className: 'fa fa-2x fa-twitter' })
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: 'https://instagram.com/thegrindwithkevin', className: '' },
+	                { eventKey: 2, href: 'https://instagram.com/thegrindwithkevin', target: '_blank', className: '' },
 	                _react2.default.createElement('span', { className: 'fa fa-2x fa-instagram' })
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 3, href: '#', className: '' },
+	                { eventKey: 3, href: 'https://www.facebook.com/thegrindwithkevin', target: '_blank', className: '' },
 	                _react2.default.createElement('span', { className: 'fa fa-2x fa-facebook' })
 	              ),
 	              _react2.default.createElement(

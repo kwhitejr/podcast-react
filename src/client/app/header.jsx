@@ -17,9 +17,9 @@ class Header extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem eventKey={1} href="https://www.twitter.com/thegrindwithkev" className=""><span className="fa fa-2x fa-twitter"></span></NavItem>
-              <NavItem eventKey={2} href="https://instagram.com/thegrindwithkevin" className=""><span className="fa fa-2x fa-instagram"></span></NavItem>
-              <NavItem eventKey={3} href="#" className=""><span className="fa fa-2x fa-facebook"></span></NavItem>
+              <NavItem eventKey={1} href="https://www.twitter.com/thegrindwithkev" target="_blank" className=""><span className="fa fa-2x fa-twitter"></span></NavItem>
+              <NavItem eventKey={2} href="https://instagram.com/thegrindwithkevin" target="_blank" className=""><span className="fa fa-2x fa-instagram"></span></NavItem>
+              <NavItem eventKey={3} href="https://www.facebook.com/thegrindwithkevin" target="_blank" className=""><span className="fa fa-2x fa-facebook"></span></NavItem>
               <NavItem eventKey={4} href="#episodes">Episodes</NavItem>
               <NavItem eventKey={6} href="#about">About</NavItem>
             </Nav>
