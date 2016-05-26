@@ -2,6 +2,12 @@ body {
   background-color: #eee;
 }
 
+.navbar-nav>li>a {
+  /*padding-top: 15px;
+  padding-bottom: 0px;*/
+  font-size: 14px;
+}
+
 h2 {
   text-shadow: 1px 1px gray;
 }

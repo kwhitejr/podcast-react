@@ -40902,6 +40902,15 @@
 	                'The Grind'
 	              )
 	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Nav,
+	              null,
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 1, href: '#' },
+	                'SoundCloud Player'
+	              )
+	            ),
 	            _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
 	          ),
 	          _react2.default.createElement(
@@ -40909,25 +40918,30 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactBootstrap.Nav,
-	              null,
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: '#' },
-	                'SoundCloud API'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Nav,
 	              { pullRight: true },
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: '#episodes' },
-	                'Episodes'
+	                { eventKey: 1, href: 'https://www.twitter.com/thegrindwithkev', className: '' },
+	                _react2.default.createElement('span', { className: 'fa fa-2x fa-twitter' })
 	              ),
-	              _react2.default.createElement(_reactBootstrap.NavItem, { eventKey: 2, href: '#' }),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 3, href: '#about' },
+	                { eventKey: 2, href: 'https://instagram.com/thegrindwithkevin', className: '' },
+	                _react2.default.createElement('span', { className: 'fa fa-2x fa-instagram' })
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 3, href: '#', className: '' },
+	                _react2.default.createElement('span', { className: 'fa fa-2x fa-facebook' })
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 4, href: '#episodes' },
+	                'Episodes'
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 6, href: '#about' },
 	                'About'
 	              )
 	            )
@@ -41222,7 +41236,7 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { id: 'episodes' },
+	      null,
 	      _react2.default.createElement(
 	        'h2',
 	        null,
@@ -41230,7 +41244,7 @@
 	      ),
 	      _react2.default.createElement(
 	        _reactBootstrap.Media,
-	        null,
+	        { id: 'episodes' },
 	        _react2.default.createElement(
 	          _reactBootstrap.Media.Left,
 	          null,
@@ -41249,7 +41263,7 @@
 	            this.props.episodes[4].date
 	          ),
 	          _react2.default.createElement(
-	            'h4',
+	            'p',
 	            null,
 	            this.props.episodes[4].description
 	          ),
@@ -41286,7 +41300,7 @@
 	            this.props.episodes[3].date
 	          ),
 	          _react2.default.createElement(
-	            'h4',
+	            'p',
 	            null,
 	            this.props.episodes[3].description
 	          )
@@ -41314,7 +41328,7 @@
 	            this.props.episodes[2].date
 	          ),
 	          _react2.default.createElement(
-	            'h4',
+	            'p',
 	            null,
 	            this.props.episodes[2].description
 	          ),
@@ -41355,7 +41369,7 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'h4',
+	            'p',
 	            null,
 	            this.props.episodes[1].description
 	          ),
@@ -41405,7 +41419,7 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'h4',
+	            'p',
 	            null,
 	            this.props.episodes[0].description
 	          )

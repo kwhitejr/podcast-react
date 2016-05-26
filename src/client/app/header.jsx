@@ -10,18 +10,18 @@ class Header extends React.Component {
             <Navbar.Brand>
               <a href="#">The Grind</a>
             </Navbar.Brand>
+            <Nav>
+              <NavItem eventKey={1} href="#">SoundCloud Player</NavItem>
+            </Nav>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav>
-              <NavItem eventKey={1} href="#">SoundCloud API</NavItem>
-
-            </Nav>
-
             <Nav pullRight>
-              <NavItem eventKey={1} href="#episodes">Episodes</NavItem>
-              <NavItem eventKey={2} href="#"></NavItem>
-              <NavItem eventKey={3} href="#about">About</NavItem>
+              <NavItem eventKey={1} href="https://www.twitter.com/thegrindwithkev" className=""><span className="fa fa-2x fa-twitter"></span></NavItem>
+              <NavItem eventKey={2} href="https://instagram.com/thegrindwithkevin" className=""><span className="fa fa-2x fa-instagram"></span></NavItem>
+              <NavItem eventKey={3} href="#" className=""><span className="fa fa-2x fa-facebook"></span></NavItem>
+              <NavItem eventKey={4} href="#episodes">Episodes</NavItem>
+              <NavItem eventKey={6} href="#about">About</NavItem>
             </Nav>
           </Navbar.Collapse>
 
