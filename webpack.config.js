@@ -3,6 +3,7 @@ var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
 var APP_DIR = path.resolve(__dirname, 'src/client/app');
+var STYLES_DIR = path.resolve(__dirname, 'src/client/styles');
 
 var config = {
  entry: APP_DIR + '/index.jsx',
@@ -18,8 +19,9 @@ var config = {
         loader : 'babel'
       },
       {
-        test: /\.css$/,
-        loader: "style-loader!css-loader"
+        test: /\.scss$/,
+        styles: STYLES_DIR,
+        loader: ["style", "css", "sass"]
       }
     ]
   }

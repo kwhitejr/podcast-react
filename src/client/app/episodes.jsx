@@ -30,7 +30,9 @@ const Episodes = React.createClass({
                     <img width={150} height={150} src={episode.sqimg} alt="Image"/>
                   </Media.Left>
                   <Media.Body>
-                    <Media.Heading>{episode.episode} - {episode.name} - {episode.date}</Media.Heading>
+                    <a href={episode.soundcloud} target="_blank">
+                      <Media.Heading>{episode.episode} - {episode.name} - {episode.date}</Media.Heading>
+                    </a>
                     <p>{episode.description}</p>
                     <h4><a href={episode.url}>{episode.label}</a></h4>
                   </Media.Body>

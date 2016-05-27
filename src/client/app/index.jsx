@@ -64,6 +64,7 @@ const App = React.createClass({
           sqimg: './assets/images/004bradsova-sq.jpg',
           description: 'Brad is well-known ne\'er-do-well who is not, in fact, well-known, and a disreputable rascal who is not, in fact, disreputable. We discuss why Nintendo cannot hope to successfully develop an open-world Zelda, why Miyamoto-san ought to gracefully retire, and why Tim is so very, very wrong.',
           date: '3/27/2016',
+          soundcloud: null,
           label: null,
           url: null
         },
@@ -75,17 +76,19 @@ const App = React.createClass({
           sqimg: './assets/images/005daveyarber-sq.jpg',
           description: 'Dave the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.',
           date: '4/10/2016',
+          soundcloud: null,
           label: 'SKY Kombucha',
           url: 'http://skykombucha.com/'
         },
         {
           episode: '006',
           name: 'Ewan Rayner',
-          info: 'Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father',
-          img: './assets/images/fox-900x600.jpg',
-          sqimg: './assets/images/005daveyarber-sq.jpg',
+          info: 'Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father of Instagram Sensation',
+          img: './assets/images/006ewanrayner-900x600.jpg',
+          sqimg: './assets/images/006ewanrayner-sq.jpg',
           description: 'Gibberish gibberish gibberish',
           date: '5/20/2016',
+          soundcloud: null,
           label: null,
           url: null
         }
