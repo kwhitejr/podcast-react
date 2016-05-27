@@ -17,6 +17,8 @@ const App = React.createClass({
     return {
       index: 0,
       direction: null,
+      recentFive: [{soundcloud: ''}, {}, {}, {}, {}],
+      allEpisodes: [{soundcloud: ''}, {}, {}, {}, {}],
       episodes: [
         {
           episode: '001',
@@ -26,7 +28,9 @@ const App = React.createClass({
           date: '2/27/2016',
           img: './assets/images/001davidstapp-900x600.jpg',
           sqimg: './assets/images/001davidstapp-sq.jpg',
-          soundcloud: 'https://soundcloud.com/kevin-white-612475908/001-david-stapp-022716'
+          soundcloud: 'https://soundcloud.com/kevin-white-612475908/001-david-stapp-022716',
+          label: null,
+          url: null
         },
         {
           episode: '002',
@@ -36,7 +40,9 @@ const App = React.createClass({
           sqimg: './assets/images/002theotran-sq.jpg',
           description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. He also has the best damn hat collection I ever did see. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
           date: '3/6/2016',
-          soundcloud: 'https://soundcloud.com/kevin-white-612475908/002-dj-theo-tran-3616'
+          soundcloud: 'https://soundcloud.com/kevin-white-612475908/002-dj-theo-tran-3616',
+          label: 'www.theotrance.com',
+          url: 'http://www.theotrance.com'
         },
         {
           episode: '003',
@@ -46,7 +52,9 @@ const App = React.createClass({
           sqimg: './assets/images/003benpettus-sq.jpg',
           description: 'Ben is a designer extraordinaire. He was also my classmate at DevLeague, where we shared a great love for good coffee. Ben was instrumental in helping to conceptualize the podcast, and designed its legendary logos. We go deep into his transformative experience as a Mysore Ashtanga yoga student and his journey to becoming a full instructor.',
           date: '3/22/2016',
-          soundcloud: 'https://soundcloud.com/kevin-white-612475908/003-benjamin-pettus-32216'
+          soundcloud: 'https://soundcloud.com/kevin-white-612475908/003-benjamin-pettus-32216',
+          label: 'www.benjaminpettus.com',
+          url: 'http://www.benjaminpettus.com'
         },
         {
           episode: '004',
@@ -55,7 +63,9 @@ const App = React.createClass({
           img: './assets/images/004bradsova-900x600.jpg',
           sqimg: './assets/images/004bradsova-sq.jpg',
           description: 'Brad is well-known ne\'er-do-well who is not, in fact, well-known, and a disreputable rascal who is not, in fact, disreputable. We discuss why Nintendo cannot hope to successfully develop an open-world Zelda, why Miyamoto-san ought to gracefully retire, and why Tim is so very, very wrong.',
-          date: '3/27/2016'
+          date: '3/27/2016',
+          label: null,
+          url: null
         },
         {
           episode: '005',
@@ -64,10 +74,60 @@ const App = React.createClass({
           img: './assets/images/005daveyarber-900x600.jpg',
           sqimg: './assets/images/005daveyarber-sq.jpg',
           description: 'Dave the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.',
-          date: '4/10/2016'
+          date: '4/10/2016',
+          label: 'SKY Kombucha',
+          url: 'http://skykombucha.com/'
+        },
+        {
+          episode: '006',
+          name: 'Ewan Rayner',
+          info: 'Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father',
+          img: './assets/images/fox-900x600.jpg',
+          sqimg: './assets/images/005daveyarber-sq.jpg',
+          description: 'Gibberish gibberish gibberish',
+          date: '5/20/2016',
+          label: null,
+          url: null
         }
       ]
     };
+  },
+
+  componentDidMount () {
+    this.getRecentFive();
+    this.getAllEpisodes();
+  },
+
+  getRecentFive () {
+    var recentFive = this.state.episodes
+      .sort(function (a, b) {
+        if (parseInt(a.episode) > parseInt(b.episode)) {
+          return -1;
+        } else {
+          return 1;
+        }
+      })
+      .slice(0, 5);
+
+    this.setState({
+      recentFive: recentFive
+    });
+  },
+
+  getAllEpisodes() {
+    // ajax call to server.js
+    var allEpisodes = this.state.episodes
+      .sort(function (a, b) {
+        if (parseInt(a.episode) > parseInt(b.episode)) {
+          return -1;
+        } else {
+          return 1;
+        }
+      });
+
+    this.setState({
+      allEpisodes: allEpisodes
+    });
   },
 
   toggleSlide (selectedIndex, e) {
@@ -84,7 +144,8 @@ const App = React.createClass({
         <GridInstance
           index={this.state.index}
           direction={this.state.direction}
-          episodes={this.state.episodes}
+          recentFive={this.state.recentFive}
+          allEpisodes={this.state.allEpisodes}
           toggleSlide={this.toggleSlide}
         />
       </div>
@@ -103,7 +164,7 @@ const GridInstance = React.createClass({
             <PictureSlider
               index={this.props.index}
               direction={this.props.direction}
-              episodes={this.props.episodes}
+              episodes={this.props.recentFive}
               toggleSlide={this.props.toggleSlide}
             />
           </Col>
@@ -113,7 +174,7 @@ const GridInstance = React.createClass({
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
             <Episodes
-              episodes={this.props.episodes}
+              episodes={this.props.allEpisodes}
             />
           </Col>
         </Row>&nbsp;

@@ -3,23 +3,51 @@ import { Media, Label } from 'react-bootstrap';
 
 
 const Episodes = React.createClass({
+
+  componentDidMount () {
+    console.log(this.props.episodes);
+  },
+
+  componentDidUpdate () {
+    console.log(this.props.episodes);
+  },
+
+  // buildList (episodes) {
+  //   for (var i=0; i<this.props.episodes.length; i++) {
+
+  //   }
+  // },
+
   render () {
     return (
-      <div >
+      <div id="episodes">
         <h2>All Episodes</h2>
-        <Media id="episodes">
-         <Media.Left>
-            <img width={150} height={150} src={this.props.episodes[4].sqimg} alt="Image"/>
-          </Media.Left>
-          <Media.Body>
-            <Media.Heading>{this.props.episodes[4].episode} - {this.props.episodes[4].name} - {this.props.episodes[4].date} <Label bsStyle="success">Coming Soon!</Label></Media.Heading>
-            <p>{this.props.episodes[4].description}</p>
-            <h4><a href="http://www.skykombucha.com">www.skykombucha.com</a></h4>
-          </Media.Body>
-        </Media>
-        <hr />
+          {this.props.episodes.map(function(episode, i) {
+            return (
+              <div key={i}>
+                <Media>
+                 <Media.Left>
+                    <img width={150} height={150} src={episode.sqimg} alt="Image"/>
+                  </Media.Left>
+                  <Media.Body>
+                    <Media.Heading>{episode.episode} - {episode.name} - {episode.date}</Media.Heading>
+                    <p>{episode.description}</p>
+                    <h4><a href={episode.url}>{episode.label}</a></h4>
+                  </Media.Body>
+                </Media>
+                <hr />
+              </div>
+            )
+          })}
+      </div>
+    )
+  }
+});
 
-        <Media>
+export default Episodes;
+
+/***
+<Media>
          <Media.Left>
             <img width={150} height={150} src={this.props.episodes[3].sqimg} alt="Image"/>
           </Media.Left>
@@ -65,10 +93,4 @@ const Episodes = React.createClass({
           </Media.Body>
         </Media>
         <hr />
-
-      </div>
-    )
-  }
-});
-
-export default Episodes;
+***/
