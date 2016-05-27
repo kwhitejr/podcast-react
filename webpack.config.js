@@ -6,7 +6,7 @@ var APP_DIR = path.resolve(__dirname, 'src/client/app');
 var STYLES_DIR = path.resolve(__dirname, 'src/client/styles');
 
 var config = {
- entry: APP_DIR + '/index.jsx',
+  entry: APP_DIR + '/index.jsx',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
@@ -20,7 +20,7 @@ var config = {
       },
       {
         test: /\.scss$/,
-        styles: STYLES_DIR,
+        include: STYLES_DIR,
         loaders: ["style", "css", "sass"]
       }
     ]

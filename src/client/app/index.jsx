@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
+import './../styles/app.scss'
 
 
 import Header from './header.jsx';
