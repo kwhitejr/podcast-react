@@ -21,7 +21,7 @@ var config = {
       {
         test: /\.scss$/,
         styles: STYLES_DIR,
-        loader: ["style", "css", "sass"]
+        loaders: ["style", "css", "sass"]
       }
     ]
   }
