@@ -41449,7 +41449,7 @@
 	              null,
 	              _react2.default.createElement(
 	                'a',
-	                { href: '#' },
+	                { 'class': 'page-scroll', href: '#' },
 	                'The Grind'
 	              )
 	            ),
@@ -41491,12 +41491,12 @@
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 4, href: '#episodes' },
+	                { eventKey: 4, 'class': 'page-scroll', href: '#episodes' },
 	                'Episodes'
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.NavItem,
-	                { eventKey: 6, href: '#about' },
+	                { eventKey: 6, 'class': 'page-scroll', href: '#about' },
 	                'About'
 	              )
 	            )

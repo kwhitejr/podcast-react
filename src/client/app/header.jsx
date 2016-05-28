@@ -12,7 +12,7 @@ class Header extends React.Component {
         <Navbar fixedTop={true} inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">The Grind</a>
+              <a class="page-scroll" href="#">The Grind</a>
             </Navbar.Brand>
             <Nav>
               <OverlayTrigger placement="right" overlay={tooltip}>
@@ -26,8 +26,8 @@ class Header extends React.Component {
               <NavItem eventKey={1} href="https://www.twitter.com/thegrindwithkev" target="_blank" className=""><span className="fa fa-2x fa-twitter"></span></NavItem>
               <NavItem eventKey={2} href="https://instagram.com/thegrindwithkevin" target="_blank" className=""><span className="fa fa-2x fa-instagram"></span></NavItem>
               <NavItem eventKey={3} href="https://www.facebook.com/thegrindwithkevin" target="_blank" className=""><span className="fa fa-2x fa-facebook"></span></NavItem>
-              <NavItem eventKey={4} href="#episodes">Episodes</NavItem>
-              <NavItem eventKey={6} href="#about">About</NavItem>
+              <NavItem eventKey={4} class="page-scroll" href="#episodes">Episodes</NavItem>
+              <NavItem eventKey={6} class="page-scroll" href="#about">About</NavItem>
             </Nav>
           </Navbar.Collapse>
 
