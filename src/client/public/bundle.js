@@ -41419,7 +41419,7 @@
 	
 	var tooltip = _react2.default.createElement(
 	  _reactBootstrap.Tooltip,
-	  null,
+	  { id: 'tooltip' },
 	  'Coming Soon!'
 	);
 	

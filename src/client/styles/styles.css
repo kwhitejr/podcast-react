@@ -32,3 +32,8 @@ hr {
 .slider {
   margin-top: 80px;
 }
+
+.tooltip-inner {
+  background-color: red;
+}
+
