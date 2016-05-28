@@ -57,30 +57,26 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
 	
-	__webpack_require__(/*! ./../styles/app.scss */ 437);
+	__webpack_require__(/*! ./../styles/app.scss */ 433);
 	
-	var _header = __webpack_require__(/*! ./header.jsx */ 433);
+	var _header = __webpack_require__(/*! ./header.jsx */ 437);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _slider = __webpack_require__(/*! ./slider.jsx */ 434);
+	var _slider = __webpack_require__(/*! ./slider.jsx */ 438);
 	
 	var _slider2 = _interopRequireDefault(_slider);
 	
-	var _about = __webpack_require__(/*! ./about.jsx */ 435);
+	var _about = __webpack_require__(/*! ./about.jsx */ 439);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _episodes = __webpack_require__(/*! ./episodes.jsx */ 436);
+	var _episodes = __webpack_require__(/*! ./episodes.jsx */ 440);
 	
 	var _episodes2 = _interopRequireDefault(_episodes);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// import Player from './player.jsx';
-	// import CustomPlayer from './player2.jsx';
-	
-	// import InfoSlider from './infoSlider.jsx';
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	  getInitialState: function getInitialState() {
@@ -89,78 +85,30 @@
 	      direction: null,
 	      recentFive: [{ soundcloud: '' }, {}, {}, {}, {}],
 	      allEpisodes: [{ soundcloud: '' }, {}, {}, {}, {}],
-	      episodes: [{
-	        episode: '001',
-	        name: 'David Stapp',
-	        info: 'Texan, Legal Mind, Skilled Orator, Questionable Comedian',
-	        description: 'Met Dave in law school. After three years, I found out that he prefers to go by "David." He\'s a pretty astute fellow, despite his height. As young professionals on the cusp of new careers as attorneys, we share a fear of leading a drab cubicle existence. Do not go gently into that morose good night.',
-	        date: '2/27/2016',
-	        img: './assets/images/001davidstapp-900x600.jpg',
-	        sqimg: './assets/images/001davidstapp-sq.jpg',
-	        soundcloud: 'https://soundcloud.com/kevin-white-612475908/001-david-stapp-022716',
-	        label: null,
-	        url: null
-	      }, {
-	        episode: '002',
-	        name: 'DJ Theo Tran',
-	        info: 'EDM DJ, Jiu-jitsu Ninja, Web Developer, Gun Enthusiast',
-	        img: './assets/images/002theotran-900x600.jpg',
-	        sqimg: './assets/images/002theotran-sq.jpg',
-	        description: 'Theo is my classmate from DevLeague\'s legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. He also has the best damn hat collection I ever did see. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.',
-	        date: '3/6/2016',
-	        soundcloud: 'https://soundcloud.com/kevin-white-612475908/002-dj-theo-tran-3616',
-	        label: 'www.theotrance.com',
-	        url: 'http://www.theotrance.com'
-	      }, {
-	        episode: '003',
-	        name: 'Benjamin Pettus',
-	        info: 'Designer, Web Developer, Yoga Instructor, Coffee Connoiseur',
-	        img: './assets/images/spices-900x600.jpg',
-	        sqimg: './assets/images/003benpettus-sq.jpg',
-	        description: 'Ben is a designer extraordinaire. He was also my classmate at DevLeague, where we shared a great love for good coffee. Ben was instrumental in helping to conceptualize the podcast, and designed its legendary logos. We go deep into his transformative experience as a Mysore Ashtanga yoga student and his journey to becoming a full instructor.',
-	        date: '3/22/2016',
-	        soundcloud: 'https://soundcloud.com/kevin-white-612475908/003-benjamin-pettus-32216',
-	        label: 'www.benjaminpettus.com',
-	        url: 'http://www.benjaminpettus.com'
-	      }, {
-	        episode: '004',
-	        name: 'Brad Sova',
-	        info: 'Attorney, Linguist, Gamer, Quick-witted Rascal, Dour Genius',
-	        img: './assets/images/004bradsova-900x600.jpg',
-	        sqimg: './assets/images/004bradsova-sq.jpg',
-	        description: 'Brad is well-known ne\'er-do-well who is not, in fact, well-known, and a disreputable rascal who is not, in fact, disreputable. We discuss why Nintendo cannot hope to successfully develop an open-world Zelda, why Miyamoto-san ought to gracefully retire, and why Tim is so very, very wrong.',
-	        date: '3/27/2016',
-	        soundcloud: null,
-	        label: null,
-	        url: null
-	      }, {
-	        episode: '005',
-	        name: 'Dave Yarber',
-	        info: 'SKY Kombucha Co-Founder, Brewer, Entrepreneur, Attorney',
-	        img: './assets/images/005daveyarber-900x600.jpg',
-	        sqimg: './assets/images/005daveyarber-sq.jpg',
-	        description: 'Dave the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.',
-	        date: '4/10/2016',
-	        soundcloud: null,
-	        label: 'SKY Kombucha',
-	        url: 'http://skykombucha.com/'
-	      }, {
-	        episode: '006',
-	        name: 'Ewan Rayner',
-	        info: 'Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father of Instagram Sensation',
-	        img: './assets/images/006ewanrayner-900x600.jpg',
-	        sqimg: './assets/images/006ewanrayner-sq.jpg',
-	        description: 'Gibberish gibberish gibberish',
-	        date: '5/20/2016',
-	        soundcloud: null,
-	        label: null,
-	        url: null
-	      }]
+	      episodes: []
 	    };
 	  },
 	  componentDidMount: function componentDidMount() {
-	    this.getRecentFive();
 	    this.getAllEpisodes();
+	  },
+	  getAllEpisodes: function getAllEpisodes() {
+	    var _this = this;
+	
+	    $.ajax({
+	      url: '/episodes',
+	      method: "GET",
+	      dataType: "json",
+	      success: function success(data) {
+	        _this.setState({
+	          episodes: data
+	        });
+	        _this.getRecentFive();
+	        _this.sortEpisodes();
+	      },
+	      failure: function failure(err) {
+	        console.log(err);
+	      }
+	    });
 	  },
 	  getRecentFive: function getRecentFive() {
 	    var recentFive = this.state.episodes.sort(function (a, b) {
@@ -175,7 +123,7 @@
 	      recentFive: recentFive
 	    });
 	  },
-	  getAllEpisodes: function getAllEpisodes() {
+	  sortEpisodes: function sortEpisodes() {
 	    // ajax call to server.js
 	    var allEpisodes = this.state.episodes.sort(function (a, b) {
 	      if (parseInt(a.episode) > parseInt(b.episode)) {
@@ -41082,531 +41030,6 @@
 
 /***/ },
 /* 433 */
-/*!***********************************!*\
-  !*** ./src/client/app/header.jsx ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var tooltip = _react2.default.createElement(
-	  _reactBootstrap.Tooltip,
-	  null,
-	  'Coming Soon!'
-	);
-	
-	var Header = function (_React$Component) {
-	  _inherits(Header, _React$Component);
-	
-	  function Header() {
-	    _classCallCheck(this, Header);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Header).apply(this, arguments));
-	  }
-	
-	  _createClass(Header, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Navbar,
-	          { fixedTop: true, inverse: true },
-	          _react2.default.createElement(
-	            _reactBootstrap.Navbar.Header,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Navbar.Brand,
-	              null,
-	              _react2.default.createElement(
-	                'a',
-	                { href: '#' },
-	                'The Grind'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Nav,
-	              null,
-	              _react2.default.createElement(
-	                _reactBootstrap.OverlayTrigger,
-	                { placement: 'right', overlay: tooltip },
-	                _react2.default.createElement(
-	                  _reactBootstrap.NavItem,
-	                  { eventKey: 1, href: '#' },
-	                  'SoundCloud Player'
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Navbar.Collapse,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Nav,
-	              { pullRight: true },
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 1, href: 'https://www.twitter.com/thegrindwithkev', target: '_blank', className: '' },
-	                _react2.default.createElement('span', { className: 'fa fa-2x fa-twitter' })
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 2, href: 'https://instagram.com/thegrindwithkevin', target: '_blank', className: '' },
-	                _react2.default.createElement('span', { className: 'fa fa-2x fa-instagram' })
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 3, href: 'https://www.facebook.com/thegrindwithkevin', target: '_blank', className: '' },
-	                _react2.default.createElement('span', { className: 'fa fa-2x fa-facebook' })
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 4, href: '#episodes' },
-	                'Episodes'
-	              ),
-	              _react2.default.createElement(
-	                _reactBootstrap.NavItem,
-	                { eventKey: 6, href: '#about' },
-	                'About'
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Header;
-	}(_react2.default.Component);
-	
-	exports.default = Header;
-	// <NavItem eventKey={1} href="#">Link</NavItem>
-
-	// <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-	//   <MenuItem eventKey={3.1}>Action</MenuItem>
-	//   <MenuItem eventKey={3.2}>Another action</MenuItem>
-	//   <MenuItem eventKey={3.3}>Something else here</MenuItem>
-	//   <MenuItem divider />
-	//   <MenuItem eventKey={3.3}>Separated link</MenuItem>
-	// </NavDropdown>
-
-/***/ },
-/* 434 */
-/*!***********************************!*\
-  !*** ./src/client/app/slider.jsx ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var PictureSlider = _react2.default.createClass({
-	  displayName: 'PictureSlider',
-	  getInitialState: function getInitialState() {
-	    return {
-	      index: 0,
-	      direction: null
-	    };
-	  },
-	  handleSelect: function handleSelect(selectedIndex, e) {
-	    // alert('selected=' + selectedIndex + ', direction=' + e.direction);
-	    console.log(this.props);
-	    this.setState({
-	      index: selectedIndex,
-	      direction: e.direction
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'slider' },
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Recent Episodes'
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Carousel,
-	        { activeIndex: this.props.index, direction: this.props.direction, onSelect: this.props.toggleSlide, slide: true, interval: 3000 },
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Item,
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: this.props.episodes[0].soundcloud },
-	            _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[0].img })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Carousel.Caption,
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              this.props.episodes[0].episode,
-	              ' - ',
-	              this.props.episodes[0].name,
-	              ' - ',
-	              this.props.episodes[0].date
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              this.props.episodes[0].info
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Item,
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: this.props.episodes[1].soundcloud },
-	            _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[1].img })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Carousel.Caption,
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              this.props.episodes[1].episode,
-	              ' - ',
-	              this.props.episodes[1].name,
-	              ' - ',
-	              this.props.episodes[1].date
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              this.props.episodes[1].info
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Item,
-	          null,
-	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[2].img }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Carousel.Caption,
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              this.props.episodes[2].episode,
-	              ' - ',
-	              this.props.episodes[2].name,
-	              ' - ',
-	              this.props.episodes[2].date
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              this.props.episodes[2].info
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Item,
-	          null,
-	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[3].img }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Carousel.Caption,
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              this.props.episodes[3].episode,
-	              ' - ',
-	              this.props.episodes[3].name,
-	              ' - ',
-	              this.props.episodes[3].date
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              this.props.episodes[3].info
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Carousel.Item,
-	          null,
-	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[4].img }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Carousel.Caption,
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              this.props.episodes[4].episode,
-	              ' - ',
-	              this.props.episodes[4].name,
-	              ' - ',
-	              this.props.episodes[4].date
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              this.props.episodes[4].info
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	// const PictureSlide = React.createClass({
-	//   render() {
-	//     console.log(this.props);
-	//     return (
-	//       <div>
-	//         <Carousel.Item>
-	//           <img width={900} height={600} alt="900x600" src={this.props.slide.img}/>
-	//           <Carousel.Caption>
-	//             <h3>{this.props.slide.name}</h3>
-	//             <p>{this.props.slide.info}</p>
-	//           </Carousel.Caption>
-	//         </Carousel.Item>
-	//       </div>
-	//     );
-	//   }
-	// });
-	
-	exports.default = PictureSlider;
-
-/***/ },
-/* 435 */
-/*!**********************************!*\
-  !*** ./src/client/app/about.jsx ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var title = _react2.default.createElement(
-	  'h2',
-	  null,
-	  'About the Podcast'
-	);
-	
-	var About = _react2.default.createClass({
-	  displayName: 'About',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { id: 'about' },
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: title },
-	        _react2.default.createElement(
-	          'i',
-	          null,
-	          'The Grind with Kevin'
-	        ),
-	        ' is my project to start generating conversations with the many interesting people I\'ve met on this life\'s journey. I\'ve been inspired by many of the conversational podcasts out there, but they also tend to be the domain of various celebrity personalities. I am interested in hearing and sharing what everyday people have to say about the various topics that interest them. My goal is to share a cup of coffee with each of them, prevaricate on the issues of the day, and inject a bit of humor and personal growth where I can. Thanks for listening!'
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = About;
-
-/***/ },
-/* 436 */
-/*!*************************************!*\
-  !*** ./src/client/app/episodes.jsx ***!
-  \*************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Episodes = _react2.default.createClass({
-	  displayName: 'Episodes',
-	  componentDidMount: function componentDidMount() {
-	    console.log(this.props.episodes);
-	  },
-	  componentDidUpdate: function componentDidUpdate() {
-	    console.log(this.props.episodes);
-	  },
-	
-	
-	  // buildList (episodes) {
-	  //   for (var i=0; i<this.props.episodes.length; i++) {
-	
-	  //   }
-	  // },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { id: 'episodes' },
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'All Episodes'
-	      ),
-	      this.props.episodes.map(function (episode, i) {
-	        return _react2.default.createElement(
-	          'div',
-	          { key: i },
-	          _react2.default.createElement(
-	            _reactBootstrap.Media,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Media.Left,
-	              null,
-	              _react2.default.createElement('img', { width: 150, height: 150, src: episode.sqimg, alt: 'Image' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Media.Body,
-	              null,
-	              _react2.default.createElement(
-	                'a',
-	                { href: episode.soundcloud, target: '_blank' },
-	                _react2.default.createElement(
-	                  _reactBootstrap.Media.Heading,
-	                  null,
-	                  episode.episode,
-	                  ' - ',
-	                  episode.name,
-	                  ' - ',
-	                  episode.date
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                episode.description
-	              ),
-	              _react2.default.createElement(
-	                'h4',
-	                null,
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: episode.url },
-	                  episode.label
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement('hr', null)
-	        );
-	      })
-	    );
-	  }
-	});
-	
-	exports.default = Episodes;
-	
-	/***
-	<Media>
-	         <Media.Left>
-	            <img width={150} height={150} src={this.props.episodes[3].sqimg} alt="Image"/>
-	          </Media.Left>
-	          <Media.Body>
-	            <Media.Heading>{this.props.episodes[3].episode} - {this.props.episodes[3].name} - {this.props.episodes[3].date} <Label bsStyle="success">Coming Soon!</Label></Media.Heading>
-	            <p>{this.props.episodes[3].description}</p>
-	          </Media.Body>
-	        </Media>
-	        <hr />
-
-	        <Media>
-	         <Media.Left>
-	            <img width={150} height={150} src={this.props.episodes[2].sqimg} alt="Image"/>
-	          </Media.Left>
-	          <Media.Body>
-	            <Media.Heading><a href={this.props.episodes[2].soundcloud}>{this.props.episodes[2].episode} - {this.props.episodes[2].name} - {this.props.episodes[2].date}</a></Media.Heading>
-	            <p>{this.props.episodes[2].description}</p>
-	            <h4><a href="http://www.benjaminpettus.com">www.benjaminpettus.com</a></h4>
-	          </Media.Body>
-	        </Media>
-	        <hr />
-
-	        <Media>
-	         <Media.Left>
-	            <img width={150} height={150} src={this.props.episodes[1].sqimg} alt="Image"/>
-	          </Media.Left>
-	          <Media.Body>
-	            <Media.Heading><a href={this.props.episodes[1].soundcloud}>{this.props.episodes[1].episode} - {this.props.episodes[1].name} - {this.props.episodes[1].date}</a></Media.Heading>
-	            <p>{this.props.episodes[1].description}</p>
-	            <h4><a href="http://www.theotrance.com">www.theotrance.com</a></h4>
-	            <h4><a href="https://soundcloud.com/theotranofficial">Theo on SoundCloud</a></h4>
-	          </Media.Body>
-	        </Media>
-	        <hr />
-
-	        <Media>
-	         <Media.Left>
-	            <img width={150} height={150} src={this.props.episodes[0].sqimg} alt="Image"/>
-	          </Media.Left>
-	          <Media.Body>
-	            <Media.Heading><a href={this.props.episodes[0].soundcloud}>{this.props.episodes[0].episode} - {this.props.episodes[0].name} - {this.props.episodes[0].date}</a></Media.Heading>
-	            <p>{this.props.episodes[0].description}</p>
-	          </Media.Body>
-	        </Media>
-	        <hr />
-	***/
-
-/***/ },
-/* 437 */
 /*!************************************!*\
   !*** ./src/client/styles/app.scss ***!
   \************************************/
@@ -41615,10 +41038,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../../~/css-loader!./../../../~/sass-loader!./app.scss */ 438);
+	var content = __webpack_require__(/*! !./../../../~/css-loader!./../../../~/sass-loader!./app.scss */ 434);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../../~/style-loader/addStyles.js */ 440)(content, {});
+	var update = __webpack_require__(/*! ./../../../~/style-loader/addStyles.js */ 436)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -41635,13 +41058,13 @@
 	}
 
 /***/ },
-/* 438 */
+/* 434 */
 /*!*******************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/client/styles/app.scss ***!
   \*******************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../../~/css-loader/lib/css-base.js */ 439)();
+	exports = module.exports = __webpack_require__(/*! ./../../../~/css-loader/lib/css-base.js */ 435)();
 	// imports
 	
 	
@@ -41652,7 +41075,7 @@
 
 
 /***/ },
-/* 439 */
+/* 435 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -41711,7 +41134,7 @@
 
 
 /***/ },
-/* 440 */
+/* 436 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -41964,6 +41387,470 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 437 */
+/*!***********************************!*\
+  !*** ./src/client/app/header.jsx ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var tooltip = _react2.default.createElement(
+	  _reactBootstrap.Tooltip,
+	  null,
+	  'Coming Soon!'
+	);
+	
+	var Header = function (_React$Component) {
+	  _inherits(Header, _React$Component);
+	
+	  function Header() {
+	    _classCallCheck(this, Header);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Header).apply(this, arguments));
+	  }
+	
+	  _createClass(Header, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Navbar,
+	          { fixedTop: true, inverse: true },
+	          _react2.default.createElement(
+	            _reactBootstrap.Navbar.Header,
+	            null,
+	            _react2.default.createElement(
+	              _reactBootstrap.Navbar.Brand,
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#' },
+	                'The Grind'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Nav,
+	              null,
+	              _react2.default.createElement(
+	                _reactBootstrap.OverlayTrigger,
+	                { placement: 'right', overlay: tooltip },
+	                _react2.default.createElement(
+	                  _reactBootstrap.NavItem,
+	                  { eventKey: 1, href: '#' },
+	                  'SoundCloud Player'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Navbar.Collapse,
+	            null,
+	            _react2.default.createElement(
+	              _reactBootstrap.Nav,
+	              { pullRight: true },
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 1, href: 'https://www.twitter.com/thegrindwithkev', target: '_blank', className: '' },
+	                _react2.default.createElement('span', { className: 'fa fa-2x fa-twitter' })
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 2, href: 'https://instagram.com/thegrindwithkevin', target: '_blank', className: '' },
+	                _react2.default.createElement('span', { className: 'fa fa-2x fa-instagram' })
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 3, href: 'https://www.facebook.com/thegrindwithkevin', target: '_blank', className: '' },
+	                _react2.default.createElement('span', { className: 'fa fa-2x fa-facebook' })
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 4, href: '#episodes' },
+	                'Episodes'
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.NavItem,
+	                { eventKey: 6, href: '#about' },
+	                'About'
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Header;
+	}(_react2.default.Component);
+	
+	exports.default = Header;
+	// <NavItem eventKey={1} href="#">Link</NavItem>
+
+	// <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+	//   <MenuItem eventKey={3.1}>Action</MenuItem>
+	//   <MenuItem eventKey={3.2}>Another action</MenuItem>
+	//   <MenuItem eventKey={3.3}>Something else here</MenuItem>
+	//   <MenuItem divider />
+	//   <MenuItem eventKey={3.3}>Separated link</MenuItem>
+	// </NavDropdown>
+
+/***/ },
+/* 438 */
+/*!***********************************!*\
+  !*** ./src/client/app/slider.jsx ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PictureSlider = _react2.default.createClass({
+	  displayName: 'PictureSlider',
+	  getInitialState: function getInitialState() {
+	    return {
+	      index: 0,
+	      direction: null
+	    };
+	  },
+	  handleSelect: function handleSelect(selectedIndex, e) {
+	    // alert('selected=' + selectedIndex + ', direction=' + e.direction);
+	    console.log(this.props);
+	    this.setState({
+	      index: selectedIndex,
+	      direction: e.direction
+	    });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'slider' },
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Recent Episodes'
+	      ),
+	      _react2.default.createElement(
+	        _reactBootstrap.Carousel,
+	        { activeIndex: this.props.index, direction: this.props.direction, onSelect: this.props.toggleSlide, slide: true, interval: 3000 },
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: this.props.episodes[0].soundcloud },
+	            _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[0].img })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[0].episode,
+	              ' - ',
+	              this.props.episodes[0].name,
+	              ' - ',
+	              this.props.episodes[0].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[0].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: this.props.episodes[1].soundcloud },
+	            _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[1].img })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[1].episode,
+	              ' - ',
+	              this.props.episodes[1].name,
+	              ' - ',
+	              this.props.episodes[1].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[1].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[2].img }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[2].episode,
+	              ' - ',
+	              this.props.episodes[2].name,
+	              ' - ',
+	              this.props.episodes[2].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[2].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[3].img }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[3].episode,
+	              ' - ',
+	              this.props.episodes[3].name,
+	              ' - ',
+	              this.props.episodes[3].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[3].info
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Carousel.Item,
+	          null,
+	          _react2.default.createElement('img', { width: 950, height: 600, alt: '950x600', src: this.props.episodes[4].img }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Carousel.Caption,
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              this.props.episodes[4].episode,
+	              ' - ',
+	              this.props.episodes[4].name,
+	              ' - ',
+	              this.props.episodes[4].date
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.episodes[4].info
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	// const PictureSlide = React.createClass({
+	//   render() {
+	//     console.log(this.props);
+	//     return (
+	//       <div>
+	//         <Carousel.Item>
+	//           <img width={900} height={600} alt="900x600" src={this.props.slide.img}/>
+	//           <Carousel.Caption>
+	//             <h3>{this.props.slide.name}</h3>
+	//             <p>{this.props.slide.info}</p>
+	//           </Carousel.Caption>
+	//         </Carousel.Item>
+	//       </div>
+	//     );
+	//   }
+	// });
+	
+	exports.default = PictureSlider;
+
+/***/ },
+/* 439 */
+/*!**********************************!*\
+  !*** ./src/client/app/about.jsx ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var title = _react2.default.createElement(
+	  'h2',
+	  null,
+	  'About the Podcast'
+	);
+	
+	var About = _react2.default.createClass({
+	  displayName: 'About',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { id: 'about' },
+	      _react2.default.createElement(
+	        _reactBootstrap.Panel,
+	        { header: title },
+	        _react2.default.createElement(
+	          'i',
+	          null,
+	          'The Grind with Kevin'
+	        ),
+	        ' is my project to start generating conversations with the many interesting people I\'ve met on this life\'s journey. I\'ve been inspired by many of the conversational podcasts out there, but they also tend to be the domain of various celebrity personalities. I am interested in hearing and sharing what everyday people have to say about the various topics that interest them. My goal is to share a cup of coffee with each of them, prevaricate on the issues of the day, and inject a bit of humor and personal growth where I can. Thanks for listening!'
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = About;
+
+/***/ },
+/* 440 */
+/*!*************************************!*\
+  !*** ./src/client/app/episodes.jsx ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 168);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Episodes = _react2.default.createClass({
+	  displayName: 'Episodes',
+	  componentDidMount: function componentDidMount() {},
+	  componentDidUpdate: function componentDidUpdate() {},
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { id: 'episodes' },
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'All Episodes'
+	      ),
+	      this.props.episodes.map(function (episode, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { key: i },
+	          _react2.default.createElement(
+	            _reactBootstrap.Media,
+	            null,
+	            _react2.default.createElement(
+	              _reactBootstrap.Media.Left,
+	              null,
+	              _react2.default.createElement('img', { width: 150, height: 150, src: episode.sqimg, alt: 'Image' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Media.Body,
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: episode.soundcloud, target: '_blank' },
+	                _react2.default.createElement(
+	                  _reactBootstrap.Media.Heading,
+	                  null,
+	                  episode.episode,
+	                  ' - ',
+	                  episode.name,
+	                  ' - ',
+	                  episode.date
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                episode.description
+	              ),
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: episode.url },
+	                  episode.label
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement('hr', null)
+	        );
+	      })
+	    );
+	  }
+	});
+	
+	exports.default = Episodes;
 
 /***/ }
 /******/ ]);
