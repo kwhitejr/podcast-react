@@ -11,6 +11,12 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  externals: {
+    "jquery": "jQuery",
+    "react": "React",
+    "react-dom": "ReactDOM",
+    "react-bootstrap": "ReactBootstrap"
+  },
   module : {
     loaders : [
       {
