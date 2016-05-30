@@ -3,6 +3,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose');
 
+//mongodb://127.0.0.1:27017/podcast
 mongoose.connect('mongodb://localhost/podcast');
 
 var episodeSchema = mongoose.Schema({

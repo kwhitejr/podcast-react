@@ -14,14 +14,14 @@ class Header extends React.Component {
             <Navbar.Brand>
               <a class="page-scroll" href="#">The Grind</a>
             </Navbar.Brand>
-            <Nav>
-              <OverlayTrigger placement="right" overlay={tooltip}>
-              <NavItem eventKey={1} href="#">SoundCloud Player</NavItem>
-              </OverlayTrigger>
-            </Nav>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
+            <Nav>
+              <OverlayTrigger placement="right" overlay={tooltip}>
+                <NavItem eventKey={1} href="#">SoundCloud Player</NavItem>
+              </OverlayTrigger>
+            </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="https://www.twitter.com/thegrindwithkev" target="_blank" className=""><span className="fa fa-2x fa-twitter"></span></NavItem>
               <NavItem eventKey={2} href="https://instagram.com/thegrindwithkevin" target="_blank" className=""><span className="fa fa-2x fa-instagram"></span></NavItem>
