@@ -26,7 +26,7 @@ const Episodes = React.createClass({
                       <Media.Heading>{episode.episode} - {episode.name} - {episode.date}</Media.Heading>
                     </a>
                     <p>{episode.description}</p>
-                    <h4><a href={episode.url}>{episode.label}</a></h4>
+                    <h4><a href={episode.url} target="_blank">{episode.label}</a></h4>
                   </Media.Body>
                 </Media>
                 <hr />
