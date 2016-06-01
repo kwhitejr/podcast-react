@@ -27,7 +27,7 @@
     "episode": "003",
     "name": "Benjamin Pettus",
     "info": "Designer, Web Developer, Yoga Instructor, Coffee Connoiseur",
-    "img": "/assets/images/spices-900x600.jpg",
+    "img": "/assets/images/003benpettus-900x600.jpg",
     "sqimg": "/assets/images/003benpettus-sq.jpg",
     "description": "Ben is a designer extraordinaire. He was also my classmate at DevLeague, where we shared a great love for good coffee. Ben was instrumental in helping to conceptualize the podcast, and designed its legendary logos. We go deep into his transformative experience as a Mysore Ashtanga yoga student and his journey to becoming a full instructor.",
     "date": "3/22/2016",
@@ -49,26 +49,14 @@
   },
   {
     "episode": "005",
-    "name": "Dave Yarber",
-    "info": "SKY Kombucha Co-Founder, Brewer, Entrepreneur, Attorney",
-    "img": "/assets/images/005daveyarber-900x600.jpg",
-    "sqimg": "/assets/images/005daveyarber-sq.jpg",
-    "description": "Dave the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.",
-    "date": "4/10/2016",
-    "soundcloud": null,
-    "label": "SKY Kombucha",
-    "url": "http://skykombucha.com/"
-  },
-  {
-    "episode": "006",
-    "name": "Ewan Rayner",
-    "info": "Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father of Instagram Sensation",
-    "img": "/assets/images/006ewanrayner-900x600.jpg",
-    "sqimg": "/assets/images/006ewanrayner-sq.jpg",
-    "description": "Gibberish gibberish gibberish",
-    "date": "5/20/2016",
-    "soundcloud": null,
-    "label": null,
-    "url": null
+    "name": "Post-Mortem",
+    "info": "Team GetALife",
+    "img": "/assets/images/005teamgetalife-900x600.jpg",
+    "sqimg": "/assets/images/DevLeague.jpg",
+    "description": "A very special episode indeed! I sit down with Team GetALife to discuss their DevLeague final project, including the pivotal decision to include the Sea of Fire. A post-mortem is a reflection on how the project started, how it finished, what went well, what didn't, and everything in between! Team GetALife includes Gail Matsushima, Jon Ahnee, and first ever return guest Benjamin Pettus. Go visit getalife.events right now!",
+    "date": "5/30/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/005-postmortem-team-getalife-53016",
+    "label": "Get-A-Life",
+    "url": "http://getalife.events/"
   }
 ]
