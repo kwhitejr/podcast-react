@@ -58,5 +58,29 @@
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/005-postmortem-team-getalife-53016",
     "label": "Get-A-Life",
     "url": "http://getalife.events/"
+  },
+  {
+    "episode": "006",
+    "name": "Dave Yarber",
+    "info": "SKY Kombucha Co-Founder, Brewer, Entrepreneur, Attorney",
+    "img": "/assets/images/006daveyarber-900x600.jpg",
+    "sqimg": "/assets/images/006daveyarber-sq.jpg",
+    "description": "Dave is the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.",
+    "date": "4/10/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/006-dave-yarber-41016",
+    "label": "SKY Kombucha",
+    "url": "http://skykombucha.com/"
+  },
+  {
+    "episode": "007",
+    "name": "Ewan Rayner",
+    "info": "Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father of Instagram Sensation",
+    "img": "/assets/images/007ewanrayner-900x600.jpg",
+    "sqimg": "/assets/images/007ewanrayner-sq.jpg",
+    "description": "Despite his British heritage, Ewan is a perfectly agreeable chap. Ewan has traveled the world, but landed here in Hawaii to study truth, justice, and the American way. We discuss his origin story, his better half, and his many travels. He calls me out for not bringing enough (any) coffee. I ask him what it feels like to live in the greatest country on earth.",
+    "date": "5/20/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/007-ewan-rayner-52016",
+    "label": null,
+    "url": null
   }
 ]
