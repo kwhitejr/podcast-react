@@ -14,7 +14,7 @@ export default React.createClass({
     return (
       <div id="episodes">
         <h2>All Episodes</h2>
-          {this.props.episodes.map(function(episode, i) {
+          {this.props.sortedEpisodes.map(function(episode, i) {
             return (
               <div key={i}>
                 <Media>

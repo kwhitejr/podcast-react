@@ -10,27 +10,27 @@ import About from './About';
 
 import * as actionCreators from '../action_creators';
 
-export const App = react.createClass({
+export const App = React.createClass({
 
   render: function() {
     return <div>
-      <Header />
+      <Header {...this.props} />
       <Grid className="grid">
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
-            <Slider />
+            <Slider {...this.props} />
           </Col>
         </Row>
 
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
-            <Episodes />
+            <Episodes {...this.props} />
           </Col>
         </Row>
 
         <Row className="show-grid">
           <Col xs={10} xsOffset={1}>
-            <About />
+            <About {...this.props} />
           </Col>
         </Row>
       </Grid>
@@ -41,11 +41,7 @@ export const App = react.createClass({
 
 function mapStateToProps(state) {
   return {
-    index: state.get('index'),
-    direction: state.get('direction'),
-    recentFive: state.get('recentFive').toJSON(),
-    allEpisodes: state.get('allEpisodes').toJSON(),
-    episodes: state.get('episodes').toJSON()
+    sortedEpisodes: state.get('sortedEpisodes').toJSON(),
   };
 }
 

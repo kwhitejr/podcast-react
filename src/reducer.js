@@ -5,7 +5,6 @@ function setState(state, newState) {
 }
 
 function sortEpisodes(state, episodes) {
-
   const sortedEpisodes = episodes
     .sort(function (a, b) {
       if (parseInt(a.episode) > parseInt(b.episode)) {
@@ -17,6 +16,7 @@ function sortEpisodes(state, episodes) {
 
   return state.set('sortedEpisodes', Map(sortedEpisodes));
 }
+
 
 export default function(state = Map(), action) {
   switch (action.type) {

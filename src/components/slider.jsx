@@ -22,40 +22,40 @@ export default React.createClass({
     return (
       <div className="slider">
       <h2>Recent Episodes</h2>
-      <Carousel activeIndex={this.props.index} direction={this.props.direction} onSelect={this.props.toggleSlide} slide={true} interval={3000}>
+      <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
         <Carousel.Item>
-          <a href={this.props.episodes[0].soundcloud}><img width={950} height={600} alt="950x600" src={this.props.episodes[0].img}/></a>
+          <a href={this.props.sortedEpisodes[0].soundcloud}><img width={950} height={600} alt="950x600" src={this.props.sortedEpisodes[0].img}/></a>
           <Carousel.Caption>
-            <h1>{this.props.episodes[0].episode} - {this.props.episodes[0].name} - {this.props.episodes[0].date}</h1>
-            <h4>{this.props.episodes[0].info}</h4>
+            <h1>{this.props.sortedEpisodes[0].episode} - {this.props.sortedEpisodes[0].name} - {this.props.sortedEpisodes[0].date}</h1>
+            <h4>{this.props.sortedEpisodes[0].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <a href={this.props.episodes[1].soundcloud}><img width={950} height={600} alt="950x600" src={this.props.episodes[1].img}/></a>
+          <a href={this.props.sortedEpisodes[1].soundcloud}><img width={950} height={600} alt="950x600" src={this.props.sortedEpisodes[1].img}/></a>
           <Carousel.Caption>
-            <h1>{this.props.episodes[1].episode} - {this.props.episodes[1].name} - {this.props.episodes[1].date}</h1>
-            <h4>{this.props.episodes[1].info}</h4>
+            <h1>{this.props.sortedEpisodes[1].episode} - {this.props.sortedEpisodes[1].name} - {this.props.sortedEpisodes[1].date}</h1>
+            <h4>{this.props.sortedEpisodes[1].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={950} height={600} alt="950x600" src={this.props.episodes[2].img}/>
+          <img width={950} height={600} alt="950x600" src={this.props.sortedEpisodes[2].img}/>
           <Carousel.Caption>
-            <h1>{this.props.episodes[2].episode} - {this.props.episodes[2].name} - {this.props.episodes[2].date}</h1>
-            <h4>{this.props.episodes[2].info}</h4>
+            <h1>{this.props.sortedEpisodes[2].episode} - {this.props.sortedEpisodes[2].name} - {this.props.sortedEpisodes[2].date}</h1>
+            <h4>{this.props.sortedEpisodes[2].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={950} height={600} alt="950x600" src={this.props.episodes[3].img}/>
+          <img width={950} height={600} alt="950x600" src={this.props.sortedEpisodes[3].img}/>
           <Carousel.Caption>
-            <h1>{this.props.episodes[3].episode} - {this.props.episodes[3].name} - {this.props.episodes[3].date}</h1>
-            <h4>{this.props.episodes[3].info}</h4>
+            <h1>{this.props.sortedEpisodes[3].episode} - {this.props.sortedEpisodes[3].name} - {this.props.sortedEpisodes[3].date}</h1>
+            <h4>{this.props.sortedEpisodes[3].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={950} height={600} alt="950x600" src={this.props.episodes[4].img}/>
+          <img width={950} height={600} alt="950x600" src={this.props.sortedEpisodes[4].img}/>
           <Carousel.Caption>
-            <h1>{this.props.episodes[4].episode} - {this.props.episodes[4].name} - {this.props.episodes[4].date}</h1>
-            <h4>{this.props.episodes[4].info}</h4>
+            <h1>{this.props.sortedEpisodes[4].episode} - {this.props.sortedEpisodes[4].name} - {this.props.sortedEpisodes[4].date}</h1>
+            <h4>{this.props.sortedEpisodes[4].info}</h4>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

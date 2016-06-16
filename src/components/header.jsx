@@ -5,7 +5,7 @@ const tooltip = (
   <Tooltip id="tooltip">Coming Soon!</Tooltip>
 );
 
-export default React.createClass {
+export default React.createClass({
   render() {
     return (
       <div>
@@ -35,4 +35,4 @@ export default React.createClass {
       </div>
     );
   }
-}
+});
