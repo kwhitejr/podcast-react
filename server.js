@@ -23,7 +23,7 @@ var Episode = mongoose.model('Episode', episodeSchema);
 
 var app = express();
 
-app.use(express.static(path.resolve(__dirname, './src/client')));
+// app.use(express.static(path.resolve(__dirname, './src/client')));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.route('/')
