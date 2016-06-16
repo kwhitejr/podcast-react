@@ -6,7 +6,7 @@ const title = (
   <h2>About the Podcast</h2>
 );
 
-const About = React.createClass({
+export default React.createClass({
   render () {
     return (
       <div id="about">
@@ -17,5 +17,3 @@ const About = React.createClass({
     )
   }
 });
-
-export default About;

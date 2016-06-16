@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-const PictureSlider = React.createClass({
+export default React.createClass({
   getInitialState() {
     return {
       index: 0,
@@ -63,24 +63,3 @@ const PictureSlider = React.createClass({
     );
   }
 });
-
-// const PictureSlide = React.createClass({
-//   render() {
-//     console.log(this.props);
-//     return (
-//       <div>
-//         <Carousel.Item>
-//           <img width={900} height={600} alt="900x600" src={this.props.slide.img}/>
-//           <Carousel.Caption>
-//             <h3>{this.props.slide.name}</h3>
-//             <p>{this.props.slide.info}</p>
-//           </Carousel.Caption>
-//         </Carousel.Item>
-//       </div>
-//     );
-//   }
-// });
-
-
-
-export default PictureSlider;

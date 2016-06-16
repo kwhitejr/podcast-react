@@ -2,7 +2,7 @@ import React from 'react';
 import { Media, Label } from 'react-bootstrap';
 
 
-const Episodes = React.createClass({
+export default React.createClass({
 
   componentDidMount () {
   },
@@ -37,5 +37,3 @@ const Episodes = React.createClass({
     )
   }
 });
-
-export default Episodes;
