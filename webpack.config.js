@@ -1,14 +1,19 @@
 var webpack = require('webpack');
-var path = require('path');
+// var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
-var STYLES_DIR = path.resolve(__dirname, 'src/client/styles');
+// var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
+// var APP_DIR = path.resolve(__dirname, 'src/client/app');
+// var STYLES_DIR = path.resolve(__dirname, 'src/client/styles');
 
-var config = {
-  entry: APP_DIR + '/index.jsx',
+module.exports = {
+  entry: [
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server',
+    './src/index.jsx'
+  ],
   output: {
-    path: BUILD_DIR,
+    path: __dirname + '/dist',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   externals: {
@@ -21,16 +26,25 @@ var config = {
     loaders : [
       {
         test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel'
+        exclude : /node_modules/,
+        loader : 'react-hot!babel'
       },
       {
         test: /\.scss$/,
-        include: STYLES_DIR,
+        exclude: /node_modules/,
         loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ]
-  }
+  },
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
-
-module.exports = config;

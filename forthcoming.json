@@ -1,13 +1,14 @@
-,
+[
   {
-    "episode": "007",
-    "name": "Ewan Rayner",
-    "info": "Soccer (Football?) Aficionado, Espresso Drinker, Road-tripper, Father of Instagram Sensation",
-    "img": "/assets/images/007ewanrayner-900x600.jpg",
-    "sqimg": "/assets/images/007ewanrayner-sq.jpg",
-    "description": "Despite his British heritage, Ewan is a perfectly agreeable chap. Ewan has traveled the world, but landed here to study truth, justice, and the American way. We discuss his origin story, his better half, and his many travels. He calls me out for not bringing enough (any) coffee. Finally, I ask him what it feels like to live in the greatest country on earth.",
+    "episode": "008",
+    "name": "Chaz Leong",
+    "info": "Fitizen, Coder, Car Guy",
+    "img": "/assets/images/008chazleong-900x600.jpg",
+    "sqimg": "/assets/images/008chazleong-sq.jpg",
+    "description": "Chaz, better known as Chazworthington, House of Leong, Fourteenth of His Name, is an upstanding citizen of the highest order. We finish a bottle of scotch, discuss our coding aspirations, and get down to brass tax on why he is always weighing his chicken katsu curry. Do you even lift, brah?",
     "date": "5/20/2016",
     "soundcloud": null,
-    "label": null,
-    "url": null
+    "label": "chazleong.com",
+    "url": "http://chazleong.com"
   }
+]
