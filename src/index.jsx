@@ -1,15 +1,43 @@
 import React from 'react';
-import {render} from 'react-dom';
-import { Grid, Row, Col } from 'react-bootstrap';
-import './../styles/app.scss';
+import ReactDOM from 'react-dom';
+import {Router, Route, hashHistory} from 'react-router';
+import {compose, createStore, applyMiddleware} from 'redux';
+import {Provider} from 'react-redux';
 
+// import './../styles/app.scss';
+import reducer from './reducer';
+import remoteActionMiddleware from './remote_action_middleware';
 
-import Header from './header.jsx';
-import PictureSlider from './slider.jsx';
-import About from './about.jsx';
-import Episodes from './episodes.jsx';
+import {AppContainer} from './components/App';
 
+const createStoreDevTools = compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore);
+const createStoreWithMiddleWare = applyMiddleware(
+  remoteActionMiddleware
+)(createStoreDevTools);
+const store = createStoreWithMiddleWare(reducer);
 
+store.dispatch({
+  type: 'SET_STATE',
+  state: {
+    index: 0,
+    direction: null,
+    sortedEpisodes: [{soundcloud: ''}, {}, {}, {}, {}],
+  }
+});
+
+const routes = <Route>
+  <Route path="/" component={AppContainer} />
+</Route>;
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={hashHistory}>{routes}</Router>
+  </Provider>,
+  document.getElementById('app')
+);
+
+/***
 const App = React.createClass({
   getInitialState() {
     return {
@@ -135,7 +163,7 @@ const GridInstance = React.createClass({
 });
 
 render(<App/>, document.getElementById('app'));
-
+***/
 
 //  <Col xs={4}>
 //   <InfoSlider
