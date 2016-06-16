@@ -12,6 +12,25 @@ import * as actionCreators from '../action_creators';
 
 export const App = React.createClass({
 
+  componentDidMount: function () {
+    this.loadEpisodes();
+  },
+
+  loadEpisodes: function () {
+    $.ajax({
+      url: 'http://localhost:3000/episodes',
+      method: "GET",
+      dataType: "json",
+      success: (data) => {
+        console.log(data);
+        this.props.setSortedEpisodes(data);
+      },
+      failure: function (err) {
+        console.log(err);
+      }
+    });
+  },
+
   render: function() {
     return <div>
       <Header {...this.props} />
@@ -41,7 +60,7 @@ export const App = React.createClass({
 
 function mapStateToProps(state) {
   return {
-    sortedEpisodes: state.get('sortedEpisodes').toJSON(),
+    sortedEpisodes: state.get('sortedEpisodes'),
   };
 }
 

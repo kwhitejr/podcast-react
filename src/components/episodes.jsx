@@ -14,8 +14,7 @@ export default React.createClass({
     return (
       <div id="episodes">
         <h2>All Episodes</h2>
-          {this.props.sortedEpisodes.map(function(episode, i) {
-            return (
+          {this.props.sortedEpisodes.map((episode, i) =>
               <div key={i}>
                 <Media>
                  <Media.Left>
@@ -31,8 +30,7 @@ export default React.createClass({
                 </Media>
                 <hr />
               </div>
-            )
-          })}
+          )}
       </div>
     )
   }

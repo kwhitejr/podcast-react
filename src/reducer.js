@@ -4,7 +4,9 @@ function setState(state, newState) {
   return state.merge(newState);
 }
 
-function sortEpisodes(state, episodes) {
+
+
+function setSortedEpisodes(state, episodes) {
   const sortedEpisodes = episodes
     .sort(function (a, b) {
       if (parseInt(a.episode) > parseInt(b.episode)) {
@@ -14,7 +16,7 @@ function sortEpisodes(state, episodes) {
       }
     });
 
-  return state.set('sortedEpisodes', Map(sortedEpisodes));
+  return state.set('sortedEpisodes', sortedEpisodes);
 }
 
 
@@ -22,8 +24,8 @@ export default function(state = Map(), action) {
   switch (action.type) {
   case 'SET_STATE':
     return setState(state, action.state);
-  case 'SORT_EPISODES':
-    return sortEpisodes(state, action.episodes);
+  case 'SET_SORTED_EPISODES':
+    return setSortedEpisodes(state, action.episodes);
   }
   return state;
 }

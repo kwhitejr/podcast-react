@@ -14,9 +14,9 @@ export function getEpisodes() {
   };
 }
 
-export function sortEpisodes(episodes) {
+export function setSortedEpisodes(episodes) {
   return {
-    type: 'SORT_EPISODES',
+    type: 'SET_SORTED_EPISODES',
     episodes
   };
 }
