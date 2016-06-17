@@ -4,8 +4,6 @@ function setState(state, newState) {
   return state.merge(newState);
 }
 
-
-
 function setSortedEpisodes(state, episodes) {
   const sortedEpisodes = episodes
     .sort(function (a, b) {
@@ -19,6 +17,9 @@ function setSortedEpisodes(state, episodes) {
   return state.set('sortedEpisodes', sortedEpisodes);
 }
 
+function setTracks(state, tracks) {
+  return state.set('tracks', tracks);
+}
 
 export default function(state = Map(), action) {
   switch (action.type) {

@@ -2,6 +2,7 @@ import React from 'react';
 import {List} from 'immutable';
 import {connect} from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';
+import {bindActionCreators} from 'redux';
 
 import Header from './Header';
 import Episodes from './Episodes';
@@ -63,5 +64,6 @@ function mapStateToProps(state) {
     sortedEpisodes: state.get('sortedEpisodes'),
   };
 }
+
 
 export const AppContainer = connect(mapStateToProps, actionCreators)(App);

@@ -5,18 +5,25 @@ export function setState(state) {
   };
 }
 
-export function getEpisodes() {
-  return {
-    type: 'GET_EPISODES',
-    url: 'http://localhost:3000/district',
-    method: 'GET',
-    cb: (response, dispatch) => dispatch(sortEpisodes(response))
-  };
-}
+// export function getEpisodes() {
+//   return {
+//     type: 'GET_EPISODES',
+//     url: 'http://localhost:3000/district',
+//     method: 'GET',
+//     cb: (response, dispatch) => dispatch(sortEpisodes(response))
+//   };
+// }
 
 export function setSortedEpisodes(episodes) {
   return {
     type: 'SET_SORTED_EPISODES',
     episodes
+  };
+}
+
+export function setTracks(track) {
+  return {
+    type: 'SET_TRACKS',
+    tracks
   };
 }
