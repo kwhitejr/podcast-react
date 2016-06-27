@@ -94,5 +94,29 @@
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/008-chaz-leong-6616",
     "label": "chazleong.com",
     "url": "http://chazleong.com"
+  },
+  {
+    "episode": "009",
+    "name": "Tony Gaskell",
+    "info": "Ninja Coder, Dev League Instructor, Start-up Fan, Hat Lover",
+    "img": "/assets/images/008tonygaskell-900x600.jpg",
+    "sqimg": "/assets/images/008tonygaskell-sq.jpg",
+    "description": "Tony is a failed marine biologist. Shamu's loss, however, is web development's gain; he is a regular ninja with a keyboard. Tony also shares his great love for start-up weekend and the sweet hats they bring. We discuss the coming singularity and whether the robot overlords will be benevolent (spoiler: they're not). Don't be afraid, just have a listen.",
+    "date": "6/10/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/009-tony-gaskell-61016",
+    "label": "Tony on Twitter",
+    "url": "https://twitter.com/thgaskell"
+  },
+  {
+    "episode": "010",
+    "name": "Sean Nakamura",
+    "info": "Photographer, Full-stack Developer, Good Listener",
+    "img": "/assets/images/008seannakamura-900x600.jpg",
+    "sqimg": "/assets/images/008seannakamura-sq.jpg",
+    "description": "Sean understands the important things in life: coding, games, whiskey, and yakiniku. Part man, part myth, and 100% legend, Sean shares his many succinct insights.",
+    "date": "6/12/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/010-sean-nakamura-61216",
+    "label": null,
+    "url": null
   }
 ]
