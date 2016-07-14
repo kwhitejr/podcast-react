@@ -2,10 +2,15 @@ body {
   background-color: #eee;
 }
 
-.navbar-nav>li>a {
-  /*padding-top: 15px;
-  padding-bottom: 0px;*/
-  font-size: 14px;
+@media only screen {
+  .row .columns, .row .column {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*h1, h4 {*/
+  color: black;
 }
 
 h2 {
@@ -16,7 +21,28 @@ hr {
   border-top: 1px solid gray;
 }
 
+.navbar-nav>li>a {
+  /*padding-top: 15px;
+  padding-bottom: 0px;*/
+  font-size: 14px;
+}
+
+.slider-row {
+  background: url(http://blogs.revistaestilo.net/lacocinanomuerde/files/2016/02/coffee-cup.jpg) top center no-repeat;
+  background-attachment: fixed;
+/*  position:fixed ;
+  top:0;
+  width:100%;
+  z-index:0;
+  height:100%;
+  background-size: calc(100% + 50px);*/
+}
+
 .grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
   background-color: white;
 }
 
@@ -30,7 +56,12 @@ hr {
 }
 
 .slider {
-  margin-top: 80px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.episodes {
+  /*margin-top: 50px;*/
 }
 
 .tooltip-inner {

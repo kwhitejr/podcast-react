@@ -8,6 +8,7 @@ import Header from './Header';
 import Episodes from './Episodes';
 import Slider from './Slider';
 import About from './About';
+import Kevin from './Kevin';
 
 import * as actionCreators from '../action_creators';
 
@@ -36,21 +37,24 @@ export const App = React.createClass({
     return <div>
       <Header {...this.props} />
       <Grid className="grid">
-        <Row className="show-grid">
-          <Col xs={10} xsOffset={1}>
+        <Row className="show-grid slider-row">
+          <Col xs={6} xsOffset={3}>
             <Slider {...this.props} />
           </Col>
         </Row>
 
         <Row className="show-grid">
-          <Col xs={10} xsOffset={1}>
+          <Col xs={7} xsOffset={1}>
             <Episodes {...this.props} />
           </Col>
         </Row>
 
         <Row className="show-grid">
-          <Col xs={10} xsOffset={1}>
+          <Col xs={5} xsOffset={1}>
             <About {...this.props} />
+          </Col>
+          <Col xs={5}>
+            <Kevin {...this.props} />
           </Col>
         </Row>
       </Grid>

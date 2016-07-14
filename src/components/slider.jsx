@@ -21,19 +21,18 @@ export default React.createClass({
   render() {
     return (
       <div className="slider">
-      <h2>Recent Episodes</h2>
-      <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
+        <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} interval={3000} rounded>
 
-        {this.props.sortedEpisodes.slice(0,5).map((episode, i) =>
-            <Carousel.Item key={i}>
-              <a href={episode.soundcloud}><img width={950} height={600} alt="950x600" src={episode.img}/></a>
-              <Carousel.Caption>
-                <h1>{episode.episode} - {episode.name} - {episode.date}</h1>
-                <h4>{episode.info}</h4>
-              </Carousel.Caption>
-            </Carousel.Item>
-        )}
-      </Carousel>
+          {this.props.sortedEpisodes.slice(0,5).map((episode, i) =>
+              <Carousel.Item key={i}>
+                <a href={episode.soundcloud}><img src={episode.img}/></a>
+                <Carousel.Caption>
+                  <h1>{episode.name}</h1>
+                  <h4>{episode.info}</h4>
+                </Carousel.Caption>
+              </Carousel.Item>
+          )}
+        </Carousel>
       </div>
     );
   }
