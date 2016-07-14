@@ -1,0 +1,39 @@
+body {
+  background-color: #eee;
+}
+
+.navbar-nav>li>a {
+  /*padding-top: 15px;
+  padding-bottom: 0px;*/
+  font-size: 14px;
+}
+
+h2 {
+  text-shadow: 1px 1px gray;
+}
+
+hr {
+  border-top: 1px solid gray;
+}
+
+.grid {
+  background-color: white;
+}
+
+.media-heading {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.panel-title {
+  font-size: 30px;
+}
+
+.slider {
+  margin-top: 80px;
+}
+
+.tooltip-inner {
+  background-color: red;
+}
+

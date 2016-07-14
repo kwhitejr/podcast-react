@@ -1,0 +1,71 @@
+body {
+  background-color: #eee;
+}
+
+@media only screen {
+  .row .columns, .row .column {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*h1, h4 {*/
+  color: black;
+}
+
+h2 {
+  text-shadow: 1px 1px gray;
+}
+
+hr {
+  border-top: 1px solid gray;
+}
+
+.navbar-nav>li>a {
+  /*padding-top: 15px;
+  padding-bottom: 0px;*/
+  font-size: 14px;
+}
+
+.slider-row {
+  background: url(http://blogs.revistaestilo.net/lacocinanomuerde/files/2016/02/coffee-cup.jpg) top right no-repeat;
+  background-attachment: fixed;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  background-color: white;
+}
+
+.media-heading {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.panel-title {
+  font-size: 30px;
+}
+
+.slider {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.episodes {
+  /*margin-top: 50px;*/
+}
+
+.tooltip-inner {
+  background-color: red;
+}
+
+#background_cycler{padding:0;margin:0;width:100%;position:absolute;top:0;left:0;z-index:-1}
+#background_cycler img{position:absolute;left:0;top:0;width:100%;z-index:1}
+#background_cycler img.active{z-index:3}

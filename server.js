@@ -23,8 +23,16 @@ var Episode = mongoose.model('Episode', episodeSchema);
 
 var app = express();
 
-app.use(express.static(path.resolve(__dirname, './src/client')));
+// app.use(express.static(path.resolve(__dirname, './src/client')));
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        res.header("Access-Control-Allow-Headers", "Content-Type");
+        res.header("Access-Control-Allow-Methods", "PUT, GET, POST, DELETE, OPTIONS");
+        next();
+    });
 
 app.route('/')
   .get(function (req, res) {
