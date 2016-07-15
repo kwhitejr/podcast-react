@@ -29,11 +29,15 @@ function setSelectedEpisode(state, episode) {
 function setCurrentKevin(state) {
   const kevins = state.get('kevins').toJSON();
   const currentKevin = state.get('currentKevin');
-  const max = 3;
-  const randomNumber = Math.floor(Math.random() * max);
+  let index = kevins.indexOf(currentKevin);
 
+  if (index === kevins.length-1) {
+    index = 0;
+  } else {
+    index++;
+  }
   const newState = Object.assign({}, state, {
-    currentKevin: kevins[randomNumber]
+    currentKevin: kevins[index]
   });
 
   return state.merge(newState);
