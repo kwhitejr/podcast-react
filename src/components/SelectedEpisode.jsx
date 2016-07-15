@@ -13,6 +13,7 @@ export const SelectedEpisode = React.createClass({
   render() {
 
     const { selectedEpisode } = this.props;
+    const widgetSource = "https://w.soundcloud.com/player/?url=" + selectedEpisode.soundcloud;
 
     return <div>
       <Header />
@@ -23,7 +24,7 @@ export const SelectedEpisode = React.createClass({
               <Image src={selectedEpisode.img} responsive/>
             </Col>
             <Col md={7}>
-              <p>stuff</p>
+              <iframe id="sc-widget" src={widgetSource} width="100%" scrolling="no" frameborder="no"></iframe>
             </Col>
           </Row>
           <Row className="show-grid">
