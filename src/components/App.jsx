@@ -1,7 +1,7 @@
 import React from 'react';
 import {List} from 'immutable';
 import {connect} from 'react-redux';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 import {bindActionCreators} from 'redux';
 
 import Header from './Header';
@@ -43,9 +43,12 @@ export const App = React.createClass({
           </Col>
         </Row>
 
-        <Row className="show-grid">
-          <Col xs={7} xsOffset={1}>
+        <Row id="episode-row" className="show-grid">
+          <Col xs={6} xsOffset={1}>
             <Episodes {...this.props} />
+          </Col>
+          <Col xs={4} >
+            <Image src="/assets/images/Grind_brown.jpg" rounded responsive />
           </Col>
         </Row>
 
@@ -66,7 +69,9 @@ export const App = React.createClass({
 function mapStateToProps(state) {
   return {
     sortedEpisodes: state.get('sortedEpisodes'),
-    selectedEpisode: state.get('selectedEpisode')
+    selectedEpisode: state.get('selectedEpisode'),
+    kevins: state.get('kevins'),
+    currentKevin: state.get('currentKevin')
   };
 }
 

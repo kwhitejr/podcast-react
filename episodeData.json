@@ -49,8 +49,8 @@
   },
   {
     "episode": "005",
-    "name": "Post-Mortem",
-    "info": "Team GetALife",
+    "name": "Team GetALife",
+    "info": "Post-Mortem",
     "img": "/assets/images/005teamgetalife-900x600.jpg",
     "sqimg": "/assets/images/DevLeague.jpg",
     "description": "A very special episode indeed! I sit down with Team GetALife to discuss their DevLeague final project, including the pivotal decision to include the Sea of Fire. A post-mortem is a reflection on how the project started, how it finished, what went well, what didn't, and everything in between! Team GetALife includes Gail Matsushima, Jon Ahnee, and first ever return guest Benjamin Pettus. Go visit getalife.events right now!",
@@ -118,5 +118,17 @@
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/010-sean-nakamura-61216",
     "label": null,
     "url": null
+  },
+  {
+    "episode": "011",
+    "name": "Team EVE",
+    "info": "Post-Mortem",
+    "img": "/assets/images/011teameve-900x600.jpg",
+    "sqimg": "/assets/images/DevLeague.jpg",
+    "description": "Team EVE created an Electric Vehicle Evaluator. Their web app permits the user to investigate the costs, short- and long-term, of purchasing and maintaining an electric vehicle. Laura, Malia, and Tyler share their thoughts on the final project process, good days, bad days, and the days in-between. Much love to my good friends in Dev League Cohort 10!",
+    "date": "6/18/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/010-sean-nakamura-61216",
+    "label": "EVE",
+    "url": "http://eve.devleague.com/"
   }
 ]

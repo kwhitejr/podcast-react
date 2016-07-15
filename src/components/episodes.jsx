@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media, Label } from 'react-bootstrap';
+import { Media, Label, Image } from 'react-bootstrap';
 
 
 export default React.createClass({
@@ -18,7 +18,7 @@ export default React.createClass({
           <div key={i}>
             <Media>
               <Media.Left>
-                <img width={150} height={150} src={episode.sqimg} alt="Image"/>
+                <Image width={150} height={150} src={episode.sqimg} alt="Image"/>
               </Media.Left>
               <Media.Body>
                 <a href="/#/selectedEpisode" onClick={this.props.setSelectedEpisode.bind(this, episode)}>

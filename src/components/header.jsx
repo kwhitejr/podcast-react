@@ -12,20 +12,16 @@ export default React.createClass({
         <Navbar fixedTop={true} inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a class="page-scroll" href="#">The Grind</a>
+              <a href="#">The Grind</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav>
-              <OverlayTrigger placement="right" overlay={tooltip}>
-                <NavItem eventKey={1} href="#">SoundCloud Player</NavItem>
-              </OverlayTrigger>
-            </Nav>
             <Nav pullRight>
-
-              <NavItem eventKey={4} class="page-scroll" href="#episodes">Episodes</NavItem>
-              <NavItem eventKey={6} class="page-scroll" href="#about">About</NavItem>
+              <NavItem eventKey={2} id="rss" href="http://feeds.soundcloud.com/users/soundcloud:users:168783376/sounds.rss">RSS</NavItem>
+              <NavItem eventKey={3} id="itunes" href="https://itunes.apple.com/us/podcast/the-grind-with-kevin/id1031095224?mt=2">iTunes</NavItem>
+              <NavItem eventKey={4} href="#episodes">Episodes</NavItem>
+              <NavItem eventKey={6} href="#about">About</NavItem>
             </Nav>
           </Navbar.Collapse>
 

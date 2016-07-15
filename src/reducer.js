@@ -26,6 +26,19 @@ function setSelectedEpisode(state, episode) {
   return state.merge(newState);
 }
 
+function setCurrentKevin(state) {
+  const kevins = state.get('kevins').toJSON();
+  const currentKevin = state.get('currentKevin');
+  const max = 3;
+  const randomNumber = Math.floor(Math.random() * max);
+
+  const newState = Object.assign({}, state, {
+    currentKevin: kevins[randomNumber]
+  });
+
+  return state.merge(newState);
+}
+
 export default function(state = Map(), action) {
   switch (action.type) {
   case 'SET_STATE':
@@ -34,6 +47,8 @@ export default function(state = Map(), action) {
     return setSortedEpisodes(state, action.episodes);
   case 'SET_SELECTED_EPISODE':
     return setSelectedEpisode(state, action.episode);
+  case 'SET_CURRENT_KEVIN':
+    return setCurrentKevin(state);
   }
   return state;
 }

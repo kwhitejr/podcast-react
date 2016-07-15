@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 import {connect} from 'react-redux';
 import ReactPlayer from 'react-player';
 
@@ -20,10 +20,10 @@ export const SelectedEpisode = React.createClass({
         <Grid>
           <Row className="show-grid">
             <Col md={5}>
-              <img height="300" width="450" src={selectedEpisode.img} />
+              <Image src={selectedEpisode.img} responsive/>
             </Col>
             <Col md={7}>
-
+              <p>stuff</p>
             </Col>
           </Row>
           <Row className="show-grid">

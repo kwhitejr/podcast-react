@@ -23,7 +23,14 @@ store.dispatch({
   type: 'SET_STATE',
   state: {
     sortedEpisodes: [],
-    selectedEpisode: {}
+    selectedEpisode: {},
+    kevins: [
+      "/assets/kevin/Kevin-01.jpg",
+      "/assets/kevin/Kevin-02.jpg",
+      "/assets/kevin/Kevin-03.jpg",
+      "/assets/kevin/Kevin-04.jpg"
+    ],
+    currentKevin: "/assets/kevin/Kevin-01.jpg"
   }
 });
 

@@ -27,3 +27,9 @@ export function setSelectedEpisode(episode) {
     episode
   };
 }
+
+export function setCurrentKevin() {
+  return {
+    type: 'SET_CURRENT_KEVIN'
+  };
+}
