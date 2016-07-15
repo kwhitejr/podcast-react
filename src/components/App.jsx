@@ -66,6 +66,7 @@ export const App = React.createClass({
 function mapStateToProps(state) {
   return {
     sortedEpisodes: state.get('sortedEpisodes'),
+    selectedEpisode: state.get('selectedEpisode')
   };
 }
 

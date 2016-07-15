@@ -21,7 +21,7 @@ export default React.createClass({
                 <img width={150} height={150} src={episode.sqimg} alt="Image"/>
               </Media.Left>
               <Media.Body>
-                <a href={episode.soundcloud} target="_blank">
+                <a href="/#/selectedEpisode" onClick={this.props.setSelectedEpisode.bind(this, episode)}>
                   <Media.Heading>{episode.episode} - {episode.name} - {episode.date}</Media.Heading>
                 </a>
                 <p>{episode.description}</p>

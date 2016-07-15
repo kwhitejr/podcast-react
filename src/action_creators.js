@@ -21,9 +21,9 @@ export function setSortedEpisodes(episodes) {
   };
 }
 
-export function setTracks(track) {
+export function setSelectedEpisode(episode) {
   return {
-    type: 'SET_TRACKS',
-    tracks
+    type: 'SET_SELECTED_EPISODE',
+    episode
   };
 }

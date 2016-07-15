@@ -10,6 +10,7 @@ import reducer from './reducer';
 import remoteActionMiddleware from './remote_action_middleware';
 
 import {AppContainer} from './components/App';
+import {SelectedEpisodeContainer} from './components/SelectedEpisode';
 
 const createStoreDevTools = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore);
@@ -21,12 +22,14 @@ const store = createStoreWithMiddleWare(reducer);
 store.dispatch({
   type: 'SET_STATE',
   state: {
-    sortedEpisodes: []
+    sortedEpisodes: [],
+    selectedEpisode: {}
   }
 });
 
 const routes = <Route>
   <Route path="/" component={AppContainer} />
+    <Route path="selectedEpisode" component={SelectedEpisodeContainer} />
 </Route>;
 
 ReactDOM.render(

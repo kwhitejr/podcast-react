@@ -17,8 +17,13 @@ function setSortedEpisodes(state, episodes) {
   return state.set('sortedEpisodes', sortedEpisodes);
 }
 
-function setTracks(state, tracks) {
-  return state.set('tracks', tracks);
+function setSelectedEpisode(state, episode) {
+
+  const newState = Object.assign({}, state, {
+    selectedEpisode: Map(episode)
+  });
+
+  return state.merge(newState);
 }
 
 export default function(state = Map(), action) {
@@ -27,6 +32,8 @@ export default function(state = Map(), action) {
     return setState(state, action.state);
   case 'SET_SORTED_EPISODES':
     return setSortedEpisodes(state, action.episodes);
+  case 'SET_SELECTED_EPISODE':
+    return setSelectedEpisode(state, action.episode);
   }
   return state;
 }
