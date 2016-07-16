@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "57da8ccd37705de16f78"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "75f3a6bf28cd088f84ff"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -41795,7 +41795,7 @@
 	    var _this = this;
 
 	    $.ajax({
-	      url: 'http://localhost:3000/episodes',
+	      url: 'http://162.243.157.246:3000/episodes',
 	      method: "GET",
 	      dataType: "json",
 	      success: function success(data) {
