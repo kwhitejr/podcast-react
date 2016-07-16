@@ -25,7 +25,7 @@ export default React.createClass({
 
           {this.props.sortedEpisodes.slice(0,5).map((episode, i) =>
               <Carousel.Item key={i}>
-                <a href={episode.soundcloud}><img src={episode.img}/></a>
+                <a href="/#/selectedEpisode"><img src={episode.img}/></a>
                 <Carousel.Caption>
                   <h1>{episode.name}</h1>
                   <h4>{episode.info}</h4>
