@@ -21,7 +21,7 @@ export const App = React.createClass({
 
   loadEpisodes: function () {
     $.ajax({
-      url: 'http://localhost:3000/episodes',
+      url: 'http://162.243.157.246:3000/episodes',
       method: "GET",
       dataType: "json",
       success: (data) => {
