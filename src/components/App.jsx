@@ -48,7 +48,6 @@ export const App = React.createClass({
             <Episodes {...this.props} />
           </Col>
           <Col xs={4} >
-            <Image src="/assets/images/Grind_brown.jpg" rounded responsive />
           </Col>
         </Row>
 

@@ -75,3 +75,18 @@ hr {
   font-size: bold;
   color: #139eb8;
 }
+
+.soundContainer {
+  margin-top: 5px;
+}
+
+.box {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.box > h1, h2, h3, h4, h5, p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
