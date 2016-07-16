@@ -6,6 +6,7 @@ import {bindActionCreators} from 'redux';
 
 import Header from './Header';
 import Episodes from './Episodes';
+import RightColumn from './RightColumn';
 import Slider from './Slider';
 import About from './About';
 import Kevin from './Kevin';
@@ -48,6 +49,7 @@ export const App = React.createClass({
             <Episodes {...this.props} />
           </Col>
           <Col xs={4} >
+            <RightColumn />
           </Col>
         </Row>
 

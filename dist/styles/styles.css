@@ -31,7 +31,11 @@ hr {
 }
 
 #episode-row {
+  margin-top: 20px;
+}
 
+#subscribe {
+  font-weight: bold;
 }
 
 .grid {
