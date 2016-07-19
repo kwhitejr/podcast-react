@@ -45,19 +45,19 @@ export const App = React.createClass({
         </Row>
 
         <Row id="episode-row" className="show-grid">
-          <Col xs={6} xsOffset={1}>
+          <Col sm={12} md={5} mdOffset={1}>
             <Episodes {...this.props} />
           </Col>
-          <Col xs={4} >
+          <Col xsHidden smHidden md={5}>
             <RightColumn />
           </Col>
         </Row>
 
         <Row className="show-grid">
-          <Col xs={5} xsOffset={1}>
+          <Col md={5} mdOffset={1}>
             <About {...this.props} />
           </Col>
-          <Col xs={5}>
+          <Col md={5}>
             <Kevin {...this.props} />
           </Col>
         </Row>
