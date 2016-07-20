@@ -79,7 +79,7 @@ hr {
   font-size: bold;
   color: #139eb8;
 }
-
+/* Selected Episode Styles */
 .soundContainer {
   margin-top: 5px;
 }
@@ -93,4 +93,39 @@ hr {
 .box > h1, h2, h3, h4, h5, p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.custom-share-button {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: .8em 1.2em;
+  border-radius: 3px;
+  display: inline-block;
+}
+.custom-share-button-icon,
+.custom-share-button-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.custom-share-button-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: .2em;
+}
+.custom-share-button-icon path { fill: #fff; }
+.custom-share-button-label {
+  font-size: .9em;
+  font-weight: 500;
+}
+.custom-share-button:hover {
+  background-color: black;
+  font-weight: 1000;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.facebook {
+  background-color: #3B5998;
 }
