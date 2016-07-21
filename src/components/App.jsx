@@ -19,6 +19,10 @@ export const App = React.createClass({
     this.loadEpisodes();
   },
 
+  componentDidUpdate: function () {
+    this.smoothScroll();
+  },
+
   loadEpisodes: function () {
     $.ajax({
       url: 'http://localhost:3000/episodes',
@@ -30,6 +34,21 @@ export const App = React.createClass({
       },
       failure: function (err) {
         console.log(err);
+      }
+    });
+  },
+
+  smoothScroll: function () {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
       }
     });
   },
