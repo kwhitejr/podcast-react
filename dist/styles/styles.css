@@ -98,8 +98,7 @@ hr {
 .custom-share-button {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #fff;
-  padding: .8em 1.2em;
-  border-radius: 3px;
+  padding: .8em 1em;
   display: inline-block;
 }
 .custom-share-button-icon,
@@ -108,24 +107,74 @@ hr {
   vertical-align: middle;
 }
 .custom-share-button-icon {
-  width: 1em;
-  height: 1em;
-  margin-right: .2em;
-}
+  width: 1.375em;
+  height: 1.375em;
+/*  margin-right: .2em;
+*/}
 .custom-share-button-icon path { fill: #fff; }
 .custom-share-button-label {
   font-size: .9em;
   font-weight: 500;
 }
-.custom-share-button:hover {
+/*.custom-share-button:hover {
   background-color: black;
   font-weight: 1000;
+}*/
+
+.share-menu {
+  list-style-type: none;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+/*.share-menu-title {
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: .04em;
+  position: relative;
+  top: .0625em;
+  text-transform: uppercase;
+  float: left;
+}*/
+
+.share-menu-item {
+  float: right;
+}
+.custom-share-button:hover {
+  background-color: #EEEEEE;
 }
 
 .twitter {
-  background-color: #55acee;
+  background-color: #9B5E27;
+}
+.twitter:hover path {
+  fill: #9B5E27;
 }
 
 .facebook {
-  background-color: #3B5998;
+  background-color: #67452A;
+}
+.facebook:hover path {
+  fill: #67452A;
+}
+
+.google {
+  background-color: #391400;
+}
+.google:hover path {
+  fill: #391400;
+}
+
+.pinterest {
+  background-color: #200000;
+}
+.pinterest:hover path {
+  fill: #200000;
+}
+
+.reddit {
+  background-color: #337AB7;
+}
+.reddit:hover path {
+  fill: #337AB7;
 }
