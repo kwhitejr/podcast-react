@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4ca901fa971a6e634cac"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d5a42772c9cb159dd07d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -60964,7 +60964,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: '#' },
-	              'The Grind'
+	              'The Grind with Kevin'
 	            )
 	          ),
 	          _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
