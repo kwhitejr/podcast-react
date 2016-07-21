@@ -12,7 +12,7 @@ export default React.createClass({
         <Navbar fixedTop={true} inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">The Grind</a>
+              <a href="#">The Grind with Kevin</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
