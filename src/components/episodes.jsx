@@ -1,8 +1,13 @@
 import React from 'react';
 import { Media, Label, Image } from 'react-bootstrap';
+import SocialMediaButtons from './SocialMediaButtons';
 
 
 export default React.createClass({
+  getInitialState() {
+    return {
+    }
+  },
 
   componentDidMount () {
   },

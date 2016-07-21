@@ -8,6 +8,7 @@
     "img": "/assets/images/001davidstapp-900x600.jpg",
     "sqimg": "/assets/images/001davidstapp-sq.jpg",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/001-david-stapp-022716",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F001-david-stapp-022716",
     "label": null,
     "url": null
   },
@@ -20,6 +21,7 @@
     "description": "Theo is my classmate from DevLeague's legendary Cohort 8. He is the best damn EDM DJ on the Hawaiian Islands, a jiu-jitsu practitioner, and gun aficionado. He also has the best damn hat collection I ever did see. Theo did me a great favor by composing the intro music for the podcast. Among other things, we discuss our reasons for entering coding bootcamp and what we hope to get out of it.",
     "date": "3/6/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/002-dj-theo-tran-3616",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F002-dj-theo-tran-3616",
     "label": "www.theotrance.com",
     "url": "http://www.theotrance.com"
   },
@@ -32,6 +34,7 @@
     "description": "Ben is a designer extraordinaire. He was also my classmate at DevLeague, where we shared a great love for good coffee. Ben was instrumental in helping to conceptualize the podcast, and designed its legendary logos. We go deep into his transformative experience as a Mysore Ashtanga yoga student and his journey to becoming a full instructor.",
     "date": "3/22/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/003-benjamin-pettus-32216",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F003-benjamin-pettus-32216",
     "label": "www.benjaminpettus.com",
     "url": "http://www.benjaminpettus.com"
   },
@@ -44,6 +47,7 @@
     "description": "Brad is well-known ne'er-do-well who is not, in fact, well-known, and a disreputable rascal who is not, in fact, disreputable. We discuss why Nintendo cannot hope to successfully develop an open-world Zelda, why Miyamoto-san ought to gracefully retire, and why Tim is so very, very wrong.",
     "date": "3/27/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/004-brad-sova-32716",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F004-brad-sova-32716",
     "label": null,
     "url": null
   },
@@ -56,6 +60,7 @@
     "description": "A very special episode indeed! I sit down with Team GetALife to discuss their DevLeague final project, including the pivotal decision to include the Sea of Fire. A post-mortem is a reflection on how the project started, how it finished, what went well, what didn't, and everything in between! Team GetALife includes Gail Matsushima, Jon Ahnee, and first ever return guest Benjamin Pettus. Go visit getalife.events right now!",
     "date": "5/30/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/005-postmortem-team-getalife-53016",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F005-postmortem-team-getalife-53016",
     "label": "Get-A-Life",
     "url": "http://getalife.events/"
   },
@@ -68,6 +73,7 @@
     "description": "Dave is the tireless co-founder of SKY Kombucha, the best locally brewed on-tap or in-a-bottle kombucha on the island of Oahu, Hawaii. Dave discusses how he and his wife, Shannon, bootstrapped their business whilst getting married, having two kids, hiring employees, getting onto storeshelves, and 1001 other things you need to figure out on the way to building a kombucha empire. If you are interested in learning hard truths about running your own small business, listen to this.",
     "date": "4/10/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/006-dave-yarber-41016",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F006-dave-yarber-41016",
     "label": "SKY Kombucha",
     "url": "http://skykombucha.com/"
   },
@@ -80,6 +86,7 @@
     "description": "Despite his British heritage, Ewan is a perfectly agreeable chap. Ewan has traveled the world, but landed here in Hawaii to study truth, justice, and the American way. We discuss his origin story, his better half, and his many travels. He calls me out for not bringing enough (any) coffee. I ask him what it feels like to live in the greatest country on earth.",
     "date": "5/20/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/007-ewan-rayner-52016",
+    "soundcloud": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F007-ewan-rayner-52016",
     "label": null,
     "url": null
   },
@@ -92,6 +99,7 @@
     "description": "Chaz, better known as Chazworthington, House of Leong, Fourteenth of His Name, is an upstanding citizen of the highest order. We finish a bottle of scotch, discuss our coding aspirations, and get down to brass tax on why he is always weighing his chicken katsu curry. Do you even lift, brah?",
     "date": "5/20/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/008-chaz-leong-6616",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F008-chaz-leong-6616",
     "label": "chazleong.com",
     "url": "http://chazleong.com"
   },
@@ -104,6 +112,7 @@
     "description": "Tony is a failed marine biologist. Shamu's loss, however, is web development's gain; he is a regular ninja with a keyboard. Tony also shares his great love for start-up weekend and the sweet hats they bring. We discuss the coming singularity and whether the robot overlords will be benevolent (spoiler: they're not). Don't be afraid, just have a listen.",
     "date": "6/10/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/009-tony-gaskell-61016",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F009-tony-gaskell-61016",
     "label": "Tony on Twitter",
     "url": "https://twitter.com/thgaskell"
   },
@@ -116,6 +125,7 @@
     "description": "Sean understands the important things in life: coding, games, whiskey, and yakiniku. Part man, part myth, and 100% legend, Sean shares his many succinct insights.",
     "date": "6/12/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/010-sean-nakamura-61216",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F010-sean-nakamura-61216",
     "label": null,
     "url": null
   },
@@ -128,7 +138,21 @@
     "description": "Team EVE created an Electric Vehicle Evaluator. Their web app permits the user to investigate the costs, short- and long-term, of purchasing and maintaining an electric vehicle. Laura, Malia, and Tyler share their thoughts on the final project process, good days, bad days, and the days in-between. Much love to my good friends in Dev League Cohort 10!",
     "date": "6/18/2016",
     "soundcloud": "https://soundcloud.com/thegrindwithkevin/011-postmortem-team-eve-61816",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F011-postmortem-team-eve-61816",
     "label": "Project EVE",
     "url": "http://eve.devleague.com/"
+  },
+  {
+    "episode": "012",
+    "name": "Josh Michaels",
+    "info": "Attorney, Politico, BFG, Karaoke Wonderboy",
+    "img": "/assets/images/012joshmichaels-900x600.jpg",
+    "sqimg": "/assets/images/012joshmichaels-sq.jpg",
+    "description": "Josh is a good friend from law school. He works as a military legislative assistant to the office of Hawaii's late Congressman Mark Takai. Josh and I discuss and banter on a host of topical issues, including the depressing political choices in 2016 (criminal or carnival-barker?), whatever did happen to the TMT, and our experiences transitioning out of the legal field and back into the Muggle world.",
+    "date": "7/17/2016",
+    "soundcloud": "",
+    "soundcloud-urlencoded": "",
+    "label": "Josh on Twitter",
+    "url": "https://twitter.com/joshmichaels14"
   }
 ]

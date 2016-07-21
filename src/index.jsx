@@ -5,7 +5,7 @@ import {compose, createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 
 // import './../styles/app.scss';
-import './app.js';
+// import './app.js';
 import reducer from './reducer';
 import remoteActionMiddleware from './remote_action_middleware';
 

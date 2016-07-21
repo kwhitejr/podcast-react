@@ -19,6 +19,11 @@ export const App = React.createClass({
     this.loadEpisodes();
   },
 
+  componentDidUpdate: function () {
+    this.smoothScroll();
+    this.scrollToTop();
+  },
+
   loadEpisodes: function () {
     $.ajax({
       url: 'http://162.243.157.246:3000/episodes',
@@ -34,6 +39,39 @@ export const App = React.createClass({
     });
   },
 
+  smoothScroll: function () {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  },
+
+  scrollToTop: function () {
+    var offset = 250;
+    var duration = 300;
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > offset) {
+        $('.back-to-top').fadeIn(duration);
+      } else {
+        $('.back-to-top').fadeOut(duration);
+      }
+    });
+
+    $('.back-to-top').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    });
+  },
+
   render: function() {
     return <div>
       <Header {...this.props} />
@@ -45,22 +83,25 @@ export const App = React.createClass({
         </Row>
 
         <Row id="episode-row" className="show-grid">
-          <Col xs={6} xsOffset={1}>
+          <Col sm={12} md={6} mdOffset={1}>
             <Episodes {...this.props} />
           </Col>
-          <Col xs={4} >
+          <Col xsHidden smHidden md={4}>
             <RightColumn />
           </Col>
         </Row>
 
         <Row className="show-grid">
-          <Col xs={5} xsOffset={1}>
+          <Col md={5} mdOffset={1}>
             <About {...this.props} />
           </Col>
-          <Col xs={5}>
+          <Col md={5}>
             <Kevin {...this.props} />
           </Col>
         </Row>
+        <a href="#" className="back-to-top" style={{display: "inline"}}>
+          <i className="fa fa-arrow-circle-up"></i>
+        </a>
       </Grid>
     </div>
   }

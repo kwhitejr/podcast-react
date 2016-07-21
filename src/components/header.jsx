@@ -18,8 +18,8 @@ export default React.createClass({
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem eventKey={2} id="rss" href="http://feeds.soundcloud.com/users/soundcloud:users:168783376/sounds.rss">RSS</NavItem>
-              <NavItem eventKey={3} id="itunes" href="https://itunes.apple.com/us/podcast/the-grind-with-kevin/id1031095224?mt=2">iTunes</NavItem>
+              <NavItem eventKey={2} id="rss" href="http://feeds.soundcloud.com/users/soundcloud:users:168783376/sounds.rss" target="_blank">RSS</NavItem>
+              <NavItem eventKey={3} id="itunes" href="https://itunes.apple.com/us/podcast/the-grind-with-kevin/id1031095224?mt=2" target="_blank">iTunes</NavItem>
               <NavItem eventKey={4} href="#episodes">Episodes</NavItem>
               <NavItem eventKey={6} href="#about">About</NavItem>
             </Nav>
