@@ -83,10 +83,10 @@ export const App = React.createClass({
         </Row>
 
         <Row id="episode-row" className="show-grid">
-          <Col sm={12} md={5} mdOffset={1}>
+          <Col sm={12} md={6} mdOffset={1}>
             <Episodes {...this.props} />
           </Col>
-          <Col xsHidden smHidden md={5}>
+          <Col xsHidden smHidden md={4}>
             <RightColumn />
           </Col>
         </Row>
