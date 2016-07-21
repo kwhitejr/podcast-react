@@ -80,6 +80,9 @@ export const App = React.createClass({
             <Kevin {...this.props} />
           </Col>
         </Row>
+        <a href="#" className="back-to-top" style={{display: "inline"}}>
+          <i className="fa fa-arrow-circle-up"></i>
+        </a>
       </Grid>
     </div>
   }
