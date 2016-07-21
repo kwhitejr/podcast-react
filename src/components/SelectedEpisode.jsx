@@ -41,11 +41,11 @@ export const SelectedEpisode = React.createClass({
               <iframe id="sc-widget" src={widgetSource} width="100%" scrolling="no" frameborder="no"></iframe>
               <div>
                 <ul className="share-menu">
-                  <li className="share-menu-item"><RedditButton /></li>
-                  <li className="share-menu-item"><PinterestButton /></li>
-                  <li className="share-menu-item"><GooglePlusButton /></li>
-                  <li className="share-menu-item"><FacebookButton /></li>
-                  <li className="share-menu-item"><TwitterButton /></li>
+                  <li className="share-menu-item"><RedditButton url={selectedEpisode["soundcloud-urlencoded"]}/></li>
+                  <li className="share-menu-item"><PinterestButton url={selectedEpisode["soundcloud-urlencoded"]}/></li>
+                  <li className="share-menu-item"><GooglePlusButton url={selectedEpisode["soundcloud-urlencoded"]}/></li>
+                  <li className="share-menu-item"><FacebookButton url={selectedEpisode["soundcloud-urlencoded"]}/></li>
+                  <li className="share-menu-item"><TwitterButton url={selectedEpisode["soundcloud-urlencoded"]}/></li>
                 </ul>
               </div>
             </Col>
@@ -88,7 +88,7 @@ const TwitterButton = React.createClass({
   render() {
     const url = "https://twitter.com/intent/tweet/" +
            "?text=Check%20out%20this%20podcast!" +
-           "&url=+https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F011-postmortem-team-eve-61816" +
+           "&url=+" + this.props.url +
            "&via=thegrindwithkev";
 
     return <div>
@@ -117,7 +117,7 @@ const FacebookButton = React.createClass({
 
   render() {
     const url = "https://www.facebook.com/sharer/sharer.php" +
-            "?u=https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F011-postmortem-team-eve-61816";
+            "?u=" + this.props.url;
 
     return <div>
       <a className="custom-share-button facebook"
@@ -145,7 +145,7 @@ const GooglePlusButton = React.createClass({
 
   render() {
     const url = "https://plus.google.com/share" +
-            "?url=https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F011-postmortem-team-eve-61816";
+            "?url=" + this.props.url;
 
     return <div>
       <a className="custom-share-button google"
@@ -173,7 +173,7 @@ const PinterestButton = React.createClass({
 
   render() {
     const url = "https://www.pinterest.com/pin/create/button/" +
-     "?url=https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F011-postmortem-team-eve-61816" +
+     "?url=" + this.props.url +
      "&description=Check%20out%20this%20podcast!" +
      "&hashtags=coffee,development,comedy";
 
@@ -203,7 +203,7 @@ const RedditButton = React.createClass({
 
   render() {
     const url = "http://www.reddit.com/submit/"+
-     "?url=https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F011-postmortem-team-eve-61816";
+     "?url=" + this.props.url;
 
     return <div>
       <a className="custom-share-button reddit"
