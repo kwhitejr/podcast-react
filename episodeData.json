@@ -150,9 +150,22 @@
     "sqimg": "/assets/images/012joshmichaels-sq.jpg",
     "description": "Josh is a good friend from law school. He works as a military legislative assistant to the office of Hawaii's late Congressman Mark Takai. Josh and I discuss and banter on a host of topical issues, including the depressing political choices in 2016 (criminal or carnival-barker?), whatever did happen to the TMT, and our experiences transitioning out of the legal field and back into the Muggle world.",
     "date": "7/17/2016",
-    "soundcloud": "",
-    "soundcloud-urlencoded": "",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/012-josh-michaels-071716",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F012-josh-michaels-071716",
     "label": "Josh on Twitter",
     "url": "https://twitter.com/joshmichaels14"
+  },
+  {
+    "episode": "013",
+    "name": "Jason Sewell",
+    "info": "Co-Founder of DevLeague, Co-Founder of Sudokrew",
+    "img": "/assets/images/013jasonsewell-900x600.jpg",
+    "sqimg": "/assets/images/013jasonsewell-sq.jpg",
+    "description": "Jason is the co-founder of two Hawaii tech companies, DevLeague and Sudokrew. He is famous for his ninja coding abilities, welcoming attitude, and robust beard. We discuss the past and future of both companies, our mutual appreciation for the graphic novel medium, and how he cracked his skull open at a punk rock concert. Nothing out of the ordinary.",
+    "date": "7/26/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/013-jason-sewell-72616",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F013-jason-sewell-72616",
+    "label": "Sudokrew",
+    "url": "http://sudokrew.com/"
   }
 ]
