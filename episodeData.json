@@ -154,5 +154,57 @@
     "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F012-josh-michaels-071716",
     "label": "Josh on Twitter",
     "url": "https://twitter.com/joshmichaels14"
+  },
+  {
+    "episode": "013",
+    "name": "Jason Sewell",
+    "info": "Co-Founder of DevLeague, Co-Founder of Sudokrew",
+    "img": "/assets/images/013jasonsewell-900x600.jpg",
+    "sqimg": "/assets/images/013jasonsewell-sq.jpg",
+    "description": "Jason is the co-founder of two Hawaii tech companies, DevLeague and Sudokrew. He is famous for his ninja coding abilities, welcoming attitude, and robust beard. We discuss the past and future of both companies, our mutual appreciation for the graphic novel medium, and how he cracked his skull open at a punk rock concert. Nothing out of the ordinary.",
+    "date": "7/26/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/013-jason-sewell-72616",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F013-jason-sewell-72616",
+    "label": "Sudokrew",
+    "url": "http://sudokrew.com/"
+  },
+  {
+    "episode": "014",
+    "name": "Politico Roundtable",
+    "info": "RJ, Tim, Josh, and Kevin",
+    "img": "/assets/images/america-900x600.jpg",
+    "sqimg": "/assets/images/Grind_beans_twitter.jpg",
+    "description": "Twelve beers, four minds, and two dreadful presidential candidates makes for one anarchical podcast. In this barely tolerable episode, RJ, Josh, Tim and I talk over one another until the beers run out. Everyone laughs and no one is right in the this questionable release.",
+    "date": "8/05/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/014-politico-roundtable-080516",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F014-politico-roundtable-080516",
+    "label": "Odds on Disaster",
+    "url": "http://projects.fivethirtyeight.com/2016-election-forecast/"
+  },
+  {
+    "episode": "015",
+    "name": "The A Team",
+    "info": "Post-Mortem",
+    "img": "/assets/images/015theateam-900x600.jpg",
+    "sqimg": "/assets/images/DevLeague.jpg",
+    "description": "I sit down with DevLeague Cohort 12's The A Team to discuss their final project. Xtinct.online visualizes species extinctions in their geographical locations over time, among other cool things. Vince and Tyler discuss their trials and tribulations in creating this complicated, but ultimately rewarding, project (sadly, team members Kyle and Cid could not join us). Vince drops bombs and Tyler removes his sunglasses in this short but sweet episode.",
+    "date": "10/09/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/015-postmortem-the-a-team-100916",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F015-postmortem-the-a-team-100916",
+    "label": "xtinct.online",
+    "url": "http://xtinct.online/"
+  },
+  {
+    "episode": "016",
+    "name": "Gail Matsushima",
+    "info": "Web Developer",
+    "img": "/assets/images/016gailmatsushima-900x600.jpg",
+    "sqimg": "/assets/images/DevLeague.jpg",
+    "description": "This week I'm catching up with Gail to find out where life has taken her since DevLeague. She having a grand old time developing for a local firm doing much business with the State of Hawaii. Gail talks story and drops some helpful hints on ono grinds.",
+    "date": "8/11/2016",
+    "soundcloud": "https://soundcloud.com/thegrindwithkevin/016-gail-matsushima-102816",
+    "soundcloud-urlencoded": "https%3A%2F%2Fsoundcloud.com%2Fthegrindwithkevin%2F016-gail-matsushima-102816",
+    "label": "Gail on Twitter!",
+    "url": "https://twitter.com/matzy20"
   }
 ]
